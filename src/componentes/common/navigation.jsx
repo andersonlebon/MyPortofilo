@@ -8,19 +8,19 @@ class Navigation extends Component {
   state = {};
   render() {
     return (
-      <header className="header d-flex w-100 justify-content-between">
-        <Link to="home" className="logo">
+      <header className="header d-flex w-100 align-items-center">
+        <Link to="home" className="logo w-25">
           LOGO
         </Link>
         <nav className="">
-          <ul className="d-flex w-100 justify-content-between">
+          <ul className="d-flex w-100 align-items-center justify-content-start">
             <li>
-              <Link to="" classNme="navbar-item">
+              <Link to="" className="navbar-item">
                 <CgFacebook />
               </Link>
             </li>
             <li>
-              <Link to="" classNme="navbar-item">
+              <Link to="" className="navbar-item">
                 <AiFillGithub />
               </Link>
             </li>
@@ -30,21 +30,17 @@ class Navigation extends Component {
               </Link>
             </li>
             <li>
-              <Link to="" classNme="navbar-item">
+              <Link to="" className="navbar-item">
                 <FaAngellist />
               </Link>
             </li>
           </ul>
         </nav>
-        <Link to="" classNme="navbar-item">
-          <AiOutlineMenu />
+        <Link to="" className="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
         </Link>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          libero eaque magni expedita fuga explicabo? Recusandae dignissimos
-          molestiae sunt nisi nemo error quae quod. Omnis pariatur sed nam
-          sapiente ratione!
-        </p>
       </header>
     );
   }

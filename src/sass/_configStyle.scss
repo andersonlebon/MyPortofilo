@@ -1,8 +1,13 @@
 $text-primary: #f3ca2f;
 $background-color: #272727;
 $text-black: #272727;
-$text-small: #9e9e9e;
+$text-small: hsl(0, 0%, 62%);
 $text-bolde: 600;
+$text-white: #fff;
+
+@mixin transition($sec, $function) {
+  transition: all $sec $function;
+}
 
 /* cyrillic */
 @font-face {

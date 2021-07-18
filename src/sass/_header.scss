@@ -1,0 +1,39 @@
+.header {
+  padding: 20px 50px;
+  background-color: $background-color;
+  a {
+    color: $text-white !important;
+    &:hover {
+      color: $text-primary !important;
+      @include transition(0.3s, ease-in-out);
+    }
+  }
+  ul {
+    font-size: 1.02rem;
+    padding: 0;
+    margin: 0;
+    li {
+      margin: 0 11px;
+    }
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-evenly;
+    width: 20px;
+    margin-left: auto;
+    div {
+      padding: 1px 0;
+      background-color: $text-white;
+      width: 20px;
+    }
+    &:hover {
+      div {
+        background-color: $text-primary !important;
+        @include transition(0.3s, ease-in-out);
+      }
+    }
+  }
+}
