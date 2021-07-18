@@ -1,12 +1,25 @@
+@mixin animOpacity {
+  animation: animOpacity 0.5s ease-in-out 1;
+
+  @keyframes animOpacity {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
 .header {
+  @include animOpacity();
+  position: fixed;
+  top: 0;
   padding: 20px 50px;
   background-color: $background-color;
   a {
     color: $text-white !important;
-    &:hover {
-      color: $text-primary !important;
-      @include transition(0.3s, ease-in-out);
-    }
   }
   ul {
     font-size: 1.02rem;
@@ -16,18 +29,76 @@
       margin: 0 11px;
     }
   }
+  .white ul li a {
+    color: $text-white !important;
+    &:hover {
+      color: $text-primary !important;
+      @include transition(0.3s, ease-in-out);
+    }
+  }
 
   .hamburger {
+    position: relative;
+    height: 15px;
+    width: 20px;
+    margin-left: auto;
+
+    div {
+      @include animOpacity();
+      padding: 1px 0;
+      background-color: $text-white;
+      width: 20px;
+      position: absolute;
+    }
+
+    & div:nth-child(1) {
+      position: absolute;
+      bottom: 0;
+    }
+
+    & div:nth-child(2) {
+      position: absolute;
+      bottom: 45%;
+    }
+
+    &:hover {
+      div {
+        background-color: $text-primary !important;
+        @include transition(0.3s, ease-in-out);
+      }
+    }
+  }
+  .show-menu {
+    @include animOpacity();
+    transform: translateX(10px);
     display: flex;
     flex-direction: column;
     height: 20px;
     justify-content: space-evenly;
     width: 20px;
     margin-left: auto;
-    div {
-      padding: 1px 0;
+    position: relative;
+
+    & div:nth-child(2) {
+      display: none;
+    }
+    & div:nth-child(1) {
+      position: absolute;
+      padding: 1px;
       background-color: $text-white;
-      width: 20px;
+      height: 20px;
+      top: 0;
+      left: 0;
+      transform: rotate(45deg);
+    }
+    & div:nth-child(3) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1px;
+      background-color: $text-white;
+      height: 20px;
+      transform: translateX(-17px) rotate(-46deg);
     }
     &:hover {
       div {
@@ -35,5 +106,26 @@
         @include transition(0.3s, ease-in-out);
       }
     }
+  }
+  .anim-menu {
+    animation: animMenu 2s ease-in-out 1;
+    div {
+      transition: all 0.8s ease-in-out;
+      margin: 0;
+    }
+  }
+}
+
+@keyframes animMenu {
+  0% {
+    height: 20px;
+  }
+  50% {
+    height: 2px;
+  }
+  100% {
+    height: 20px;
+    width: 20px;
+    position: relative;
   }
 }
