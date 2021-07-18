@@ -1,1 +1,22 @@
 @import "./_configStyle";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: Poppins, sans-serif !important;
+  font-size: 14px !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $text-black !important;
+  text-decoration: none !important;
+}

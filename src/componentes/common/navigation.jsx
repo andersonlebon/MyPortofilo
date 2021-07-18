@@ -8,12 +8,12 @@ class Navigation extends Component {
   state = {};
   render() {
     return (
-      <header className="header">
+      <header className="header d-flex w-100 justify-content-between">
         <Link to="home" className="logo">
           LOGO
         </Link>
-        <nav className="nav-bar">
-          <ul>
+        <nav className="">
+          <ul className="d-flex w-100 justify-content-between">
             <li>
               <Link to="" classNme="navbar-item">
                 <CgFacebook />
@@ -35,10 +35,16 @@ class Navigation extends Component {
               </Link>
             </li>
           </ul>
-          <Link to="" classNme="navbar-item">
-            <AiOutlineMenu />
-          </Link>
         </nav>
+        <Link to="" classNme="navbar-item">
+          <AiOutlineMenu />
+        </Link>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          libero eaque magni expedita fuga explicabo? Recusandae dignissimos
+          molestiae sunt nisi nemo error quae quod. Omnis pariatur sed nam
+          sapiente ratione!
+        </p>
       </header>
     );
   }
