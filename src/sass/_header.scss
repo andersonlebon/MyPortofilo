@@ -36,6 +36,13 @@
       @include transition(0.3s, ease-in-out);
     }
   }
+  .small-color ul li a {
+    color: $text-small !important;
+    &:hover {
+      color: $text-primary !important;
+      @include transition(0.3s, ease-in-out);
+    }
+  }
 
   .hamburger {
     position: relative;
@@ -127,5 +134,26 @@
     height: 20px;
     width: 20px;
     position: relative;
+  }
+}
+
+.menu-side {
+  height: 100vh;
+  position: fixed;
+  color: $text-small !important;
+  background-color: $background-color;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 25px 0px;
+  right: 0;
+  top: 0;
+  width: 200px;
+  .lang li {
+    font-size: 13px;
+    margin: 0 8px 0 0;
+    font-weight: 400;
+    &:hover {
+      cursor: pointer;
+      color: $text-primary !important;
+      @include transition(0.3s, ease-in-out);
+    }
   }
 }

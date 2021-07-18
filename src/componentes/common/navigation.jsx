@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MediaLink from "./medalink";
+import MenuSide from "./menu-side";
 
 class Navigation extends Component {
   state = {
@@ -42,6 +43,7 @@ class Navigation extends Component {
           <div></div>
           <div></div>
         </Link>
+        <MenuSide />
       </header>
     );
   }
