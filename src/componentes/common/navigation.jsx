@@ -43,7 +43,7 @@ class Navigation extends Component {
           <div></div>
           <div></div>
         </Link>
-        <MenuSide />
+        <MenuSide showMenu={this.state.showMenu} />
       </header>
     );
   }

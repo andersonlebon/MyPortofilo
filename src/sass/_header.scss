@@ -140,15 +140,17 @@
 
 .menu-side {
   // z-index: -100;
+  transform: translateX(110%);
+  @include transition(0.8s, ease);
   height: 100vh;
   position: fixed;
-  padding: 60px 10%;
+  padding: 60px 6%;
   color: $text-small !important;
   background-color: $background-color;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 25px 0px;
   right: 0;
   top: 0;
-  width: 40%;
+  width: 30%;
   .lang li {
     font-size: 13px;
     margin: 0 20px 0 0;
@@ -164,13 +166,26 @@
     height: 200px;
     margin: 20px 0;
     overflow-y: scroll;
+    padding: 110px 0 0;
     font-size: 22px;
     letter-spacing: -0.35;
     li {
       margin: 25px 0 0 !important;
       a {
         color: $text-small !important;
+        &:hover {
+          cursor: pointer;
+          color: $text-primary !important;
+          @include transition(0.5s, ease);
+        }
       }
     }
   }
+  .side-info {
+    margin: 50px 0 0;
+  }
+}
+.show-side {
+  transform: translateX(0) !important;
+  @include transition(0.8s, ease);
 }

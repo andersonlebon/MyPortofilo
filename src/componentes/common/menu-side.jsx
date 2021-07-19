@@ -4,7 +4,13 @@ import { Link } from "react-router-dom";
 
 const MenuSide = (props) => {
   return (
-    <aside className="menu-side d-flex flex-column justify-content-evenly">
+    <aside
+      className={
+        props.showMenu
+          ? "menu-side d-flex flex-column justify-content-evenly show-side"
+          : "menu-side d-flex flex-column justify-content-evenly"
+      }
+    >
       <ul className="lang d-flex">
         <li>ENG</li>
         <li>FRA</li>
@@ -31,6 +37,16 @@ const MenuSide = (props) => {
         </li>
       </ul>
       <MediaLink color="small-color" />
+      <div className="side-info">
+        Contact :
+        <i>
+          <u> buyananderson@gmail.com </u>
+        </i>
+        or
+        <i>
+          <u> +250785213173</u>
+        </i>
+      </div>
     </aside>
   );
 };
