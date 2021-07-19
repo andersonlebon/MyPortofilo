@@ -140,16 +140,17 @@
 
 .menu-side {
   // z-index: -100;
-  transform: translateX(110%);
+  @include animOpacity();
+  transform: translateX(100%) scale(0.5);
   @include transition(0.8s, ease);
-  height: 100vh;
+  height: 0vh;
   position: fixed;
   padding: 60px 6%;
   color: $text-small !important;
   background-color: $background-color;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 25px 0px;
   right: 0;
-  top: 0;
+  bottom: 0;
   width: 30%;
   .lang li {
     font-size: 13px;
@@ -186,6 +187,8 @@
   }
 }
 .show-side {
-  transform: translateX(0) !important;
+  @include animOpacity();
+  transform: translateX(0) scale(1) !important;
+  height: 100vh !important;
   @include transition(0.8s, ease);
 }
