@@ -76,6 +76,7 @@
     }
   }
   .show-menu {
+    z-index: 999;
     @include animOpacity();
     transform: translateX(10px);
     display: flex;
@@ -138,22 +139,38 @@
 }
 
 .menu-side {
+  // z-index: -100;
   height: 100vh;
   position: fixed;
+  padding: 60px 10%;
   color: $text-small !important;
   background-color: $background-color;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 25px 0px;
   right: 0;
   top: 0;
-  width: 200px;
+  width: 40%;
   .lang li {
     font-size: 13px;
-    margin: 0 8px 0 0;
+    margin: 0 20px 0 0;
     font-weight: 400;
     &:hover {
       cursor: pointer;
       color: $text-primary !important;
       @include transition(0.3s, ease-in-out);
+    }
+  }
+  .menu {
+    font-weight: 700;
+    height: 200px;
+    margin: 20px 0;
+    overflow-y: scroll;
+    font-size: 22px;
+    letter-spacing: -0.35;
+    li {
+      margin: 25px 0 0 !important;
+      a {
+        color: $text-small !important;
+      }
     }
   }
 }
