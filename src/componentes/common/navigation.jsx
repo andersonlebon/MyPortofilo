@@ -19,7 +19,7 @@ class Navigation extends Component {
       showMenu = !showMenu;
       this.setState({ showMenu });
       AnimMenu = !AnimMenu;
-    }, 500);
+    }, 400);
   };
   render() {
     return (

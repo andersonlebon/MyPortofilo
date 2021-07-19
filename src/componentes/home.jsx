@@ -5,9 +5,12 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <div className="container">
-        <button className="btn btn-danger"> delete</button>
-      </div>
+      <section className="home-section">
+        <h3>INTRODUCE</h3>
+        <div className="hello">
+          HELLO MY NAME IS ANDERSON, I AM A SOFTWARE DEVELOPPER
+        </div>
+      </section>
     );
   }
 }
