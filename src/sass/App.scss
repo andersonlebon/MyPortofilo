@@ -40,4 +40,15 @@ footer {
   bottom: 0;
   color: $text-small;
   padding: 15px 50px;
+  z-index: 1;
+}
+
+.scrolll {
+  height: 70vh;
+}
+
+.anim-section {
+  transform: translateY(-100%);
+  transition: all 0.8s ease-in-out;
+  // display: none;
 }

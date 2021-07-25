@@ -262,9 +262,12 @@
   -webkit-animation: animOpacity 0.5s ease-in-out 1;
           animation: animOpacity 0.5s ease-in-out 1;
   position: fixed;
+  z-index: 2;
   top: 0;
   padding: 20px 50px;
   background-color: #272727;
+  -webkit-box-shadow: 1px 1px 10px 1px #3030309d;
+          box-shadow: 1px 1px 10px 1px #3030309d;
 }
 
 @-webkit-keyframes animOpacity {
@@ -362,7 +365,6 @@
 
 .header .show-menu {
   z-index: 999;
-  background-color: aquamarine !important;
   -webkit-animation: animOpacity 0.5s ease-in-out 1;
           animation: animOpacity 0.5s ease-in-out 1;
   -webkit-transform: translateX(10px);
@@ -555,7 +557,6 @@
 .home-section {
   width: 100%;
   height: 100vh !important;
-  overflow-y: scroll;
   background-color: #272727;
 }
 
@@ -572,8 +573,8 @@
 
 .home-section .hello {
   position: relative;
-  padding-bottom: 80px;
   font-size: 45px;
+  line-height: 55px;
 }
 
 .home-section .hello::after {
@@ -628,5 +629,17 @@ footer {
   bottom: 0;
   color: #9e9e9e;
   padding: 15px 50px;
+  z-index: 1;
+}
+
+.scrolll {
+  height: 70vh;
+}
+
+.anim-section {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 /*# sourceMappingURL=App.css.map */

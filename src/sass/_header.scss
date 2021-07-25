@@ -15,9 +15,11 @@
 .header {
   @include animOpacity();
   position: fixed;
+  z-index: 2;
   top: 0;
   padding: 20px 50px;
   background-color: $background-color;
+  box-shadow: 1px 1px 10px 1px #3030309d;
   a {
     color: $text-white !important;
   }
@@ -77,7 +79,6 @@
   }
   .show-menu {
     z-index: 999;
-    background-color: aquamarine !important;
     @include animOpacity();
     transform: translateX(10px);
     display: flex;
