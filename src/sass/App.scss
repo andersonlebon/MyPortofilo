@@ -48,7 +48,10 @@ footer {
 }
 
 .anim-section {
-  transform: translateY(-100%);
+  // transform: translateY(-100%);
   transition: all 0.8s ease-in-out;
-  // display: none;
+  // position: absolute;
+  // top: -900%;
+  display: none !important;
+  // height: 0vh !important;
 }

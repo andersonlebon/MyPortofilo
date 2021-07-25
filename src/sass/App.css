@@ -637,9 +637,8 @@ footer {
 }
 
 .anim-section {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
+  display: none !important;
 }
 /*# sourceMappingURL=App.css.map */

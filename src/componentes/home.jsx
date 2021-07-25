@@ -7,24 +7,12 @@ class Home extends Component {
   section = React.createRef();
 
   componentDidMount() {
-    const sectionOneOptions = {
-      rootMargin: "-88% 0px 0px 0px",
-    };
-    const section = this.section.current;
-    const sectionOneObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          console.log("is entering");
-          section.classList.add("anim-section");
-        } else {
-          console.log("NOt is not");
-          section.classList.remove("anim-section");
-        }
-      });
-    }, sectionOneOptions);
-
-    sectionOneObserver.observe(section);
-    // console.log(this.section);
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        console.log(window.scrollY);
+        this.section.current.classList.toggle("anim-section");
+      }
+    });
   }
   section = React.createRef();
 
@@ -49,10 +37,10 @@ class Home extends Component {
             <img src={bg} alt="home-bg" className="w-100" />
           </div>
         </section>
-        <div className="scrolll"></div>
-        <div className="scrolll"></div>
-        <div className="scrolll"></div>
-        <div className="scrolll"></div>
+        <section ref={this.section2} className="scrolll bg-dark"></section>
+        <section ref={this.section3} className="scrolll bg-primary"></section>
+        <section ref={this.section4} className="scrolll bg-warning"></section>
+        <section ref={this.section5} className="scrolll bg-danger"></section>
       </div>
     );
   }
