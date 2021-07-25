@@ -573,6 +573,7 @@
 .home-section .hello {
   position: relative;
   padding-bottom: 80px;
+  font-size: 45px;
 }
 
 .home-section .hello::after {
@@ -607,5 +608,25 @@ ul {
 a {
   color: #272727 !important;
   text-decoration: none !important;
+}
+
+.lang li {
+  font-size: 13px;
+  margin: 0 20px 0 0;
+  font-weight: 400;
+}
+
+.lang li:hover {
+  cursor: pointer;
+  color: #f3ca2f !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: #9e9e9e;
+  padding: 15px 50px;
 }
 /*# sourceMappingURL=App.css.map */

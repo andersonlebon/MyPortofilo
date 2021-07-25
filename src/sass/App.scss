@@ -23,3 +23,21 @@ a {
   color: $text-black !important;
   text-decoration: none !important;
 }
+
+.lang li {
+  font-size: 13px;
+  margin: 0 20px 0 0;
+  font-weight: 400;
+  &:hover {
+    cursor: pointer;
+    color: $text-primary !important;
+    @include transition(0.3s, ease-in-out);
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: $text-small;
+  padding: 15px 50px;
+}

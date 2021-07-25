@@ -10,8 +10,8 @@ class Home extends Component {
         <div className="home-text text-white d-flex align-items-start justify-content-between">
           <h3>INTRODUCE</h3>
           <h1 className="hello text-bold">
-            <span className="text-yellow ">HELLO</span> MY NAME <br /> IS
-            <span className="text-yellow "> ANDERSON</span>, <br /> I AM A
+            <span className="text-yellow ">HELLO</span> MY NAME IS <br />
+            <span className="text-yellow name"> ANDERSON</span>, I AM A <br />
             SOFTWARE DEVELOPPER
           </h1>
         </div>
