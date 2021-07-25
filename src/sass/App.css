@@ -588,6 +588,11 @@
   background: #f3ca2f;
 }
 
+.about-section {
+  height: 100vh;
+  background-color: #272727;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
