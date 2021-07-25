@@ -1,5 +1,6 @@
 @import "./_configStyle";
 @import "./_header";
+@import "./_home";
 
 * {
   box-sizing: border-box;
@@ -21,4 +22,33 @@ ul {
 a {
   color: $text-black !important;
   text-decoration: none !important;
+}
+
+.lang li {
+  font-size: 13px;
+  margin: 0 20px 0 0;
+  font-weight: 400;
+  &:hover {
+    cursor: pointer;
+    color: $text-primary !important;
+    @include transition(0.3s, ease-in-out);
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: $text-small;
+  padding: 15px 50px;
+  z-index: 1;
+}
+
+.scrolll {
+  height: 70vh;
+}
+
+.anim-section {
+  transform: translateY(-100%);
+  transition: all 0.8s ease-in-out;
+  // display: none;
 }

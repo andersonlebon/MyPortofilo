@@ -9,6 +9,13 @@ $text-white: #fff;
   transition: all $sec $function;
 }
 
+.text-yellow {
+  color: $text-primary;
+}
+
+.text-bold {
+  font-weight: $text-bolde;
+}
 /* cyrillic */
 @font-face {
   font-family: "Playfair Display";
