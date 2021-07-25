@@ -3,4 +3,27 @@
   height: 100vh !important;
   overflow-y: scroll;
   background-color: $background-color;
+
+  h3 {
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    transform: rotate(180deg);
+    font-size: 14px;
+    margin-right: 80px;
+  }
+
+  .hello {
+    position: relative;
+    padding-bottom: 80px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100px;
+      height: 3px;
+      border-radius: 5px;
+      background: $text-primary;
+    }
+  }
 }

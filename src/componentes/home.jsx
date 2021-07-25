@@ -6,12 +6,13 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <section className="home-section justify-content-center align-items-center d-flex">
-        <div className="home-text text-white p-5">
-          <h3>INTRODUTION</h3>
-          <h1 className="hello">
-            <span className="text-yellow">HELLO</span> MY NAME IS ANDERSON, I AM
-            A SOFTWARE DEVELOPPER
+      <section className="home-section justify-content-center align-items-center p-5 d-flex">
+        <div className="home-text text-white d-flex align-items-start justify-content-between">
+          <h3>INTRODUCE</h3>
+          <h1 className="hello text-bold">
+            <span className="text-yellow ">HELLO</span> MY NAME <br /> IS
+            <span className="text-yellow "> ANDERSON</span>, <br /> I AM A
+            SOFTWARE DEVELOPPER
           </h1>
         </div>
         <div className="home-bg w-50">

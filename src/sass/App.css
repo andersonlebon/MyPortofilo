@@ -2,7 +2,7 @@
   color: #f3ca2f;
 }
 
-.y-text-bold {
+.text-bold {
   font-weight: 600;
 }
 
@@ -557,6 +557,33 @@
   height: 100vh !important;
   overflow-y: scroll;
   background-color: #272727;
+}
+
+.home-section h3 {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-orientation: sideways-right;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 14px;
+  margin-right: 80px;
+}
+
+.home-section .hello {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.home-section .hello::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: 3px;
+  border-radius: 5px;
+  background: #f3ca2f;
 }
 
 * {
