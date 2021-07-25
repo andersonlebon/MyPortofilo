@@ -17,46 +17,57 @@ const About = () => {
       <div className="about-progress text-small w-50 p-5">
         <ul>
           <li>
-            <span>Developement</span>
+            <div className="d-flex label w-100 justify-content-between">
+              <span>Development</span> <span>80%</span>
+            </div>
             <ProgressBar
               bgColor="#f3ca2f"
-              completed={60}
+              completed={80}
               height="8px"
               labelAlignment="outside"
-              labelColor="#9e9e9e"
+              labelColor="#272727"
               labelSize="10"
               transitionDuration="3s"
             />
           </li>
           <li>
+            <div className="d-flex label w-100 justify-content-between">
+              <span>Development</span> <span>68%</span>
+            </div>
             <ProgressBar
               bgColor="#f3ca2f"
-              completed={60}
+              completed={68}
               height="8px"
               labelAlignment="outside"
-              labelColor="#9e9e9e"
+              labelColor="#272727"
               labelSize="10"
               transitionDuration="3s"
             />
           </li>
           <li>
+            <div className="d-flex label w-100 justify-content-between">
+              <span>Development</span> <span>75%</span>
+            </div>
             <ProgressBar
               bgColor="#f3ca2f"
-              completed={60}
+              completed={75}
               height="8px"
               labelAlignment="outside"
-              labelColor="#9e9e9e"
+              labelColor="#272727"
               labelSize="10"
               transitionDuration="3s"
             />
           </li>
           <li>
+            <div className="d-flex label w-100 justify-content-between">
+              <span>Development</span> <span>60%</span>
+            </div>
             <ProgressBar
               bgColor="#f3ca2f"
               completed={60}
               height="8px"
               labelAlignment="outside"
-              labelColor="#9e9e9e"
+              labelColor="#272727"
               labelSize="10"
               transitionDuration="3s"
             />

@@ -594,7 +594,16 @@
 
 .about-section {
   height: 100vh;
+  font-size: 12px;
   background-color: #272727;
+}
+
+.about-section .about-progress .label {
+  padding-right: 38px;
+}
+
+.about-section .about-progress ul li {
+  margin: 40px 0;
 }
 
 * {

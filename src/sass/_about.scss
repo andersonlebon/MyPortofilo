@@ -1,4 +1,17 @@
 .about-section {
   height: 100vh;
+  font-size: 12px;
   background-color: $background-color;
+
+  .about-progress {
+    .label {
+      padding-right: 38px;
+    }
+
+    ul {
+      li {
+        margin: 40px 0;
+      }
+    }
+  }
 }
