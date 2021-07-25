@@ -6,17 +6,25 @@ import ProgressBar from "@ramonak/react-progress-bar";
 const About = () => {
   return (
     <section className="about-section text-white d-flex justify-content-center align-items-center">
-      <h3 className="vertical-text">WHAT I DO</h3>
-      <div className="about-text">
-        <h4>About me</h4>
-        <p className="text-bold">
-          MY MISSION IS <span className="text-yellow"> DESIGN & DEVELOP </span>{" "}
-          THE BEST WEBSITES AROUND
-        </p>
+      <div className="aboutme d-flex align-items-start about-text w-50 p-5">
+        <h3 className=" vertical-text">WHAT I DO</h3>
+        <div className="d-flex flex-column align-items-between">
+          <h4>About me</h4>
+          <p className="text-bold">
+            MY MISSION IS <br />
+            <span className="text-yellow"> DESIGN & DEVELOP </span> THE BEST
+            WEBSITES AROUND
+          </p>
+          <p className="p-small">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
       </div>
       <div className="about-progress text-small w-50 p-5">
-        <ul>
-          <li>
+        <ul className="w-75">
+          <li className="w-100">
             <div className="d-flex label w-100 justify-content-between">
               <span>Development</span> <span>80%</span>
             </div>
