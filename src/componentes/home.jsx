@@ -26,7 +26,7 @@ class Home extends Component {
           className="home-section justify-content-center align-items-center p-5 d-flex"
         >
           <div className="home-text text-white d-flex align-items-start justify-content-between">
-            <h3>INTRODUCE</h3>
+            <h3 className="vertical-text">INTRODUCE</h3>
             <h1 className="hello text-bold">
               <span className="text-yellow ">HELLO</span> MY NAME IS <br />
               <span className="text-yellow name"> ANDERSON</span>, I AM A <br />
