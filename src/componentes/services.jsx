@@ -26,8 +26,13 @@ const Services = () => {
         <div className="my-image">
           <img className="w-100 h-100" src={caleb} alt="My figure" />
         </div>
-        <div className="years-exp"></div>
         <div className="dots"></div>
+        <div className="years-exp">
+          <div className="number"></div>
+          <div className="years-text">
+            YEARS <br /> EXPERIENCE
+          </div>
+        </div>
       </div>
     </section>
   );
