@@ -1,0 +1,28 @@
+.services {
+  @extend .about-section;
+  .s-text {
+    margin: 0 30px;
+  }
+
+  .experience {
+    position: relative;
+    width: 350px;
+    z-index: 1;
+
+    .my-image {
+      width: 300px;
+      height: 400px;
+      z-index: 2;
+    }
+
+    .dots {
+      width: 350px;
+      height: 250px;
+      background-image: url(../images/download.png);
+      position: absolute;
+      bottom: 0;
+      left: -50px;
+      z-index: -1;
+    }
+  }
+}
