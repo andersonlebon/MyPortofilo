@@ -4,16 +4,19 @@ const Services = () => {
   return (
     <section className="about-section text-white d-flex justify-content-center align-items-center">
       <div className="aboutme d-flex align-items-start about-text w-50 p-5">
-        <h3 className=" vertical-text">My Services</h3>
+        <h3 className=" vertical-text">SERVICES</h3>
         <div className="d-flex flex-column align-items-between">
-          <h4>About me</h4>
+          <h4>My Services</h4>
           <p className="text-bold">
-            I LIKE EASY
-            <span className="text-yellow"> TO MAKE </span>
+            I LIKE <span className="text-yellow"> TO MAKE </span> THINGS
             <br />
-            THINGS AND FUN
+            EASY AND FUN
           </p>
-          <ul className="p-small d-flex flex-column"></ul>
+          <ol className="p-small d-flex flex-column">
+            <li>DEVELOPMENT</li>
+            <li>DESIGN</li>
+            <li>TECH SOLUTIONS</li>
+          </ol>
         </div>
       </div>
       <div className="experience text-small w-50 p-5"></div>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
 .text-yellow {
   color: #f3ca2f;
 }
@@ -681,5 +682,29 @@ footer {
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
   display: none !important;
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  margin: 0;
+  padding: 0;
+}
+
+ol li {
+  font-size: 15px;
+  counter-increment: my-awesome-counter;
+  margin: 7px 0;
+}
+
+ol li:hover {
+  color: #ffff !important;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+ol li::before {
+  content: "0" counter(my-awesome-counter) ". ";
 }
 /*# sourceMappingURL=App.css.map */

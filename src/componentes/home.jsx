@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import bg from "../images/pngwing.com.png";
+import Services from "./services";
 
 class Home extends Component {
   state = {};
@@ -37,10 +38,7 @@ class Home extends Component {
             <img src={bg} alt="home-bg" className="w-100" />
           </div>
         </section>
-        <section ref={this.section2} className="scrolll bg-dark"></section>
-        <section ref={this.section3} className="scrolll bg-primary"></section>
-        <section ref={this.section4} className="scrolll bg-warning"></section>
-        <section ref={this.section5} className="scrolll bg-danger"></section>
+        <Services />
       </div>
     );
   }
