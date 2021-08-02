@@ -656,6 +656,23 @@
   z-index: -1;
 }
 
+.services .years-exp {
+  position: absolute;
+  bottom: 0px;
+}
+
+.services .years-exp .number {
+  padding: 0;
+  line-height: 1;
+  font-size: 10.71rem;
+}
+
+.services .years-exp .years-text {
+  padding-bottom: 28px;
+  font-size: 1.571rem;
+  line-height: 1.181;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
