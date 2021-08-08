@@ -4,11 +4,13 @@
 @import "./_home";
 @import "./_about";
 @import "./_services";
-* {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
 body {
+  overflow-x: hidden;
   font-size: 1rem;
   font-family: Poppins, sans-serif !important;
   font-size: 14px !important;
