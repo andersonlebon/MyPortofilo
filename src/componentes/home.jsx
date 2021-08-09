@@ -20,7 +20,7 @@ class Home extends Component {
   handlScroll = () => {};
   render() {
     return (
-      <div>
+      <>
         <section
           onScroll={this.handlScroll}
           ref={this.section}
@@ -39,7 +39,7 @@ class Home extends Component {
           </div>
         </section>
         <Services />
-      </div>
+      </>
     );
   }
 }
