@@ -747,7 +747,14 @@
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0;
-  height: 90vh;
+  height: 100vh;
+  -webkit-animation: bgAnim 7s ease-in-out;
+          animation: bgAnim 7s ease-in-out;
+}
+
+.projects h3 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .projects .projects-carousel {
@@ -791,10 +798,24 @@
   bottom: 30px;
 }
 
+.rec-dot {
+  background-color: #fff !important;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.rec-dot:hover {
+  background-color: #333 !important;
+  -webkit-box-shadow: 0 0 2px 3px #f3ca2f !important;
+          box-shadow: 0 0 2px 3px #f3ca2f !important;
+}
+
 .rec-dot_active {
   background-color: #333 !important;
   -webkit-box-shadow: 0 0 2px 3px #f3ca2f !important;
           box-shadow: 0 0 2px 3px #f3ca2f !important;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .rec-arrow {
@@ -802,6 +823,7 @@
   color: #f3ca2f !important;
   position: absolute;
   border: none !important;
+  margin: 3rem;
   z-index: 100;
 }
 
@@ -812,6 +834,30 @@
 
 .rec-arrow-right {
   right: 0;
+}
+
+@-webkit-keyframes bgAnim {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 110%;
+  }
+  100% {
+    background-size: 150%;
+  }
+}
+
+@keyframes bgAnim {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 110%;
+  }
+  100% {
+    background-size: 150%;
+  }
 }
 
 *::after,
