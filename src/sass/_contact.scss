@@ -15,10 +15,11 @@
       font-weight: 400;
       padding: 5px 14px;
       outline: 1px solid #f3c92f00;
+      color: #fff;
+
       &:hover {
         &::placeholder {
           @include transition(0.3s, ease-in);
-          color: #fff;
         }
       }
     }
