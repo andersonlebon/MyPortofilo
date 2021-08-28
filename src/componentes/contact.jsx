@@ -5,6 +5,7 @@ const Contact = () => {
     <section className="contact d-flex align-items-start h-100 m-5">
       <h3 className=" vertical-text">CONTACT ME</h3>
       <div className="w-100 h-100">
+        <h2 className="title">GET IN TOUCH</h2>
         <form className="w-10 d-flex flex-column">
           <div className="mail-name d-flex justify-content-between">
             <input type="text" className="w-50" placeholder="Name*" />

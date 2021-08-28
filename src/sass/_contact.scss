@@ -1,6 +1,12 @@
 .contact {
   //   height: auto;
   //   background-color: aquamarine;
+  .title {
+    font-weight: 900;
+    margin-bottom: 3.3rem;
+    font-size: 2.5rem;
+  }
+
   form {
     row-gap: 30px;
     .mail-name {
