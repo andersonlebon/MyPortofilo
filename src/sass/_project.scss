@@ -1,7 +1,7 @@
 .projects {
-  background-color: blue;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin: 0;
   height: 90vh;
   .projects-carousel {
     padding: 0 140px 80px 0;
@@ -31,6 +31,10 @@
   width: 40%;
 }
 
+.rec-slider-container {
+  margin: 0 !important;
+}
+
 .rec-carousel-wrapper {
   position: relative;
 }
@@ -40,12 +44,21 @@
   bottom: 30px;
 }
 
+.rec-dot_active {
+  background-color: #333 !important;
+  box-shadow: 0 0 2px 3px $text-primary !important;
+}
+
 .rec-arrow {
   background-color: #333 !important;
-  color: #fff !important;
+  color: $text-primary !important;
   position: absolute;
   border: none !important;
   z-index: 100;
+  &:hover {
+    color: #000 !important;
+    background-color: #f3ca2f !important;
+  }
 }
 
 .rec-arrow-right {

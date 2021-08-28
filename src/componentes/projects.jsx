@@ -16,6 +16,18 @@ const Projects = () => {
       date: "Jun 2021",
       type: "WebSite App",
     },
+    {
+      id: 2,
+      title: "Awesome Books Library",
+      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae animi
+      dolorem odio hic perferendis officiis? Doloremque natus, rerum quaerat
+      corrupti optio deleniti? Quae consequuntur deserunt quia maxime alias,
+      sunt eaque?`,
+      Image: "image/name",
+      projectLink: "github",
+      date: "Jun 2021",
+      type: "WebSite App",
+    },
   ];
   return (
     <Carousel>
