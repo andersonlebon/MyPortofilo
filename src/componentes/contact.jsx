@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="contact d-flex align-items-center h-100 m-5">
+    <section className="contact d-flex align-items-start h-100 m-5">
       <h3 className=" vertical-text">WHAT I DO</h3>
       <div className="w-100 h-100">
         <form className="w-10 d-flex flex-column">
@@ -23,6 +23,9 @@ const Contact = () => {
             rows="10"
             placeholder="Message*"
           ></textarea>
+          <button className="submit-btn" type="submit">
+            Post Comment
+          </button>
         </form>
       </div>
     </section>

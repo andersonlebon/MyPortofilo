@@ -32,6 +32,13 @@ ul {
   padding: 0;
 }
 
+input:focus,
+textarea:focus {
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
 a {
   color: $text-black;
   text-decoration: none;

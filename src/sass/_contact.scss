@@ -1,10 +1,35 @@
 .contact {
   //   height: auto;
-  background-color: aquamarine;
+  //   background-color: aquamarine;
   form {
     row-gap: 30px;
     .mail-name {
       column-gap: 25px;
+    }
+
+    input,
+    textarea {
+      background-color: #333;
+      border: none;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 5px 14px;
+      &:hover {
+        &::placeholder {
+          @include transition(0.3s, ease-in);
+          color: #fff;
+        }
+      }
+    }
+
+    .submit-btn {
+      width: 170px;
+      letter-spacing: 0.025em;
+      border: 0;
+      border-radius: 0;
+      padding: 1.1em 1.2em;
+      background-color: black;
+      color: #fff;
     }
   }
 }
