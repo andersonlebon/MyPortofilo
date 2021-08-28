@@ -7,7 +7,7 @@
 @import "./about";
 @import "./services";
 @import "./contact";
-@import "./project.scss";
+@import "./project";
 *::after,
 *::before {
   box-sizing: border-box;
@@ -96,4 +96,8 @@ ol li {
 
 ol li::before {
   content: "0" counter(my-awesome-counter) ". ";
+}
+
+section {
+  padding: 0 50px;
 }

@@ -1,12 +1,11 @@
 import React from "react";
-import { Progress } from "react-sweet-progress";
 import "react-sweet-progress/lib/style.css";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 const About = () => {
   return (
-    <section className="about-section text-white d-flex justify-content-center align-items-center">
-      <div className="aboutme d-flex align-items-start about-text w-50 p-5">
+    <section className="about-section text-white d-flex justify-content-center">
+      <div className="aboutme d-flex align-items-start about-text w-50 pr-5">
         <h3 className=" vertical-text">WHAT I DO</h3>
         <div className="d-flex flex-column align-items-between">
           <h4>About me</h4>

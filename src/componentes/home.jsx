@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
 import bg from "../images/pngwing.com.png";
+import About from "./about-section";
 import Contact from "./contact";
 import Project from "./project";
 import Services from "./services";
@@ -41,6 +41,7 @@ class Home extends Component {
           </div>
         </section>
         <Services />
+        <About />
         <Contact />
         <Project />
       </>

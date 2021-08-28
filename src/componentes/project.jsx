@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Project = () => {
   return (
-    <section className="projects d-flex align-items-center">
+    <section className="projects d-flex justify-content-center align-items-center">
       <h3 className=" vertical-text">CONTACT ME</h3>
-      <div className="projects-carousel">
+      <div className="projects-carousel d-flex justify-content-between">
         <div className="proj-info">
           <h4 className="smal-title">FEATURED WORKS</h4>
           <h2 className="title ">
