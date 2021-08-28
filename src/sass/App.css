@@ -674,6 +674,19 @@
   line-height: 1.181;
 }
 
+.contact {
+  background-color: aquamarine;
+}
+
+.contact form {
+  row-gap: 30px;
+}
+
+.contact form .mail-name {
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
@@ -687,6 +700,11 @@ body {
   font-family: Poppins, sans-serif;
   font-size: 14px;
   line-height: 30px;
+  color: #ffff;
+}
+
+main {
+  height: 100vh;
 }
 
 ul {

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import bg from "../images/pngwing.com.png";
+import Contact from "./contact";
 import Services from "./services";
 
 class Home extends Component {
@@ -39,6 +40,7 @@ class Home extends Component {
           </div>
         </section>
         <Services />
+        <Contact />
       </>
     );
   }
