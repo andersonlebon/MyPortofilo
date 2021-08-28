@@ -570,6 +570,8 @@
   position: relative;
   font-size: 45px;
   line-height: 55px;
+  padding-bottom: 100px;
+  letter-spacing: -0.08rem;
 }
 
 .home-section .hello::after {
@@ -748,8 +750,8 @@
   padding-bottom: 50px;
   margin: 0;
   height: 100vh;
-  -webkit-animation: bgAnim 7s ease-in-out;
-          animation: bgAnim 7s ease-in-out;
+  -webkit-animation: bgAnim 80s ease-in-out infinite;
+          animation: bgAnim 80s ease-in-out infinite;
 }
 
 .projects h3 {
@@ -840,11 +842,17 @@
   0% {
     background-size: 100%;
   }
+  25% {
+    background-size: 200%;
+  }
   50% {
-    background-size: 110%;
+    background-size: 100%;
+  }
+  75% {
+    background-size: 200%;
   }
   100% {
-    background-size: 150%;
+    background-size: 100%;
   }
 }
 
@@ -852,11 +860,17 @@
   0% {
     background-size: 100%;
   }
+  25% {
+    background-size: 200%;
+  }
   50% {
-    background-size: 110%;
+    background-size: 100%;
+  }
+  75% {
+    background-size: 200%;
   }
   100% {
-    background-size: 150%;
+    background-size: 100%;
   }
 }
 

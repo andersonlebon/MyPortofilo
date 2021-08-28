@@ -3,7 +3,7 @@
   padding-bottom: 50px;
   margin: 0;
   height: 100vh;
-  animation: bgAnim 7s ease-in-out;
+  animation: bgAnim 80s ease-in-out infinite;
   h3 {
     align-self: flex-start;
   }
@@ -84,13 +84,18 @@
   0% {
     background-size: 100%;
   }
-
-  50% {
-    background-size: 110%;
+  25% {
+    background-size: 200%;
   }
 
+  50% {
+    background-size: 100%;
+  }
+  75% {
+    background-size: 200%;
+  }
   100% {
-    background-size: 150%;
+    background-size: 100%;
   }
   // 0% {
   //   background-size: 1005 !important;
