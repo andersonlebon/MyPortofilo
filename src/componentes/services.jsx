@@ -3,11 +3,11 @@ import caleb from "../images/gitprof.png";
 
 const Services = () => {
   return (
-    <section className="services text-white d-flex justify-content-center">
+    <section className="services text-white d-flex justify-content-between">
       <div className="d-flex align-items-start about-text w-50 pr-5">
         <h3 className=" vertical-text">SERVICES</h3>
         <div className="d-flex flex-column align-items-between">
-          <h4>My Services</h4>
+          <h4 className="smal-title mb-5">My Services</h4>
           <p className="text-bold">
             I LIKE <span className="text-yellow"> TO MAKE </span> THINGS
             <br />
@@ -22,7 +22,7 @@ const Services = () => {
           </ol>
         </div>
       </div>
-      <div className="experience text-small w-50 pl-5">
+      <div className="experience text-small mr-5 pr-5">
         <div className="my-image">
           <img className="w-100 h-100" src={caleb} alt="My figure" />
         </div>
