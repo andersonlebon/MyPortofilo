@@ -1,9 +1,15 @@
 .projects {
-  // background-color: #fff;
-  height: 100vh;
+  background-color: blue;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 90vh;
   .projects-carousel {
     padding: 0 140px 80px 0;
     width: 100%;
+  }
+  p {
+    width: 100%;
+    padding-bottom: 40px;
   }
 
   .proj-date {
@@ -25,8 +31,18 @@
   width: 40%;
 }
 
+.rec-carousel-wrapper {
+  position: relative;
+}
+
+.rec-pagination {
+  position: absolute;
+  bottom: 30px;
+}
+
 .rec-arrow {
-  background-color: transparent !important;
+  background-color: #333 !important;
+  color: #fff !important;
   position: absolute;
   border: none !important;
   z-index: 100;

@@ -24,7 +24,7 @@ const Contact = () => {
             rows="10"
             placeholder="Message*"
           ></textarea>
-          <button className="submit-btn" type="submit">
+          <button className="black-btn" type="submit">
             Post Comment
           </button>
         </form>

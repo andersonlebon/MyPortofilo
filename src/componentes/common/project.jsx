@@ -4,7 +4,7 @@ const Project = (props) => {
   const { description, title, date, type } = props.project;
 
   return (
-    <section className="projects d-flex justify-content-center align-items-center">
+    <section className="projects d-flex justify-content-center align-items-start">
       <h3 className=" vertical-text">CONTACT ME{props.title}</h3>
       <div className="projects-carousel d-flex justify-content-between">
         <div className="proj-info">
@@ -13,9 +13,11 @@ const Project = (props) => {
             <span className="text-yellow">{"> "}</span>
             {title}
           </h2>
-          <p>{description}</p>
+          <p className="p-small">{description}</p>
           <div className="btns">
-            <button typp="button">See Project</button>
+            <button typp="button" className="black-btn">
+              See Project
+            </button>
           </div>
         </div>
         <div className="proj-date">
