@@ -1,29 +1,26 @@
 import React from "react";
 
-const Project = () => {
+const Project = (props) => {
+  const { description, title, date, type } = props.project;
+
   return (
     <section className="projects d-flex justify-content-center align-items-center">
-      <h3 className=" vertical-text">CONTACT ME</h3>
+      <h3 className=" vertical-text">CONTACT ME{props.title}</h3>
       <div className="projects-carousel d-flex justify-content-between">
         <div className="proj-info">
           <h4 className="smal-title">FEATURED WORKS</h4>
           <h2 className="title ">
-            <span className="text-yellow">My</span> Featured{" "}
-            <span className="text-yellow">Works</span>
+            <span className="text-yellow">{"> "}</span>
+            {title}
           </h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quia
-            consectetur mollitia error possimus, at quod, deserunt asperiores ad
-            placeat doloribus temporibus, a aliquid quam ipsa perspiciatis
-            tempore illum delectus?
-          </p>
+          <p>{description}</p>
           <div className="btns">
             <button typp="button">See Project</button>
           </div>
         </div>
         <div className="proj-date">
-          <p>May 2018</p>
-          <p className="type">WebSite</p>
+          <p>{date}</p>
+          <p className="type text-yellow">{type}</p>
         </div>
       </div>
     </section>

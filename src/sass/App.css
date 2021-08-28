@@ -743,6 +743,10 @@
   font-size: 2.5rem;
 }
 
+.projects {
+  height: 100vh;
+}
+
 .projects .projects-carousel {
   padding: 0 140px 80px 0;
   width: 100%;
@@ -764,6 +768,17 @@
 
 .proj-info {
   width: 40%;
+}
+
+.rec-arrow {
+  background-color: transparent !important;
+  position: absolute;
+  border: none !important;
+  z-index: 100;
+}
+
+.rec-arrow-right {
+  right: 0;
 }
 
 *::after,

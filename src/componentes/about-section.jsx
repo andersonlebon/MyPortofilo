@@ -8,7 +8,7 @@ const About = () => {
       <div className="aboutme d-flex align-items-start about-text w-50 pr-5">
         <h3 className=" vertical-text">WHAT I DO</h3>
         <div className="d-flex flex-column align-items-between">
-          <h4>About me</h4>
+          <h4 className="mb-5">About me</h4>
           <p className="text-bold">
             MY MISSION IS <br />
             <span className="text-yellow"> DESIGN & DEVELOP </span> THE BEST
