@@ -1,5 +1,5 @@
 import React from "react";
-import caleb from "../images/caleb.jpg";
+import caleb from "../images/gitprof.png";
 
 const Services = () => {
   return (
