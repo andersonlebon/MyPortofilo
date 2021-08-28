@@ -14,6 +14,7 @@
       font-size: 14px;
       font-weight: 400;
       padding: 5px 14px;
+      outline: 1px solid #f3c92f00;
       &:hover {
         &::placeholder {
           @include transition(0.3s, ease-in);
@@ -27,9 +28,15 @@
       letter-spacing: 0.025em;
       border: 0;
       border-radius: 0;
-      padding: 1.1em 1.2em;
+      padding: 0.7em 1.2em;
       background-color: black;
       color: #fff;
+
+      &:hover {
+        background-color: $text-primary;
+        color: black;
+        @include transition(0.3s, ease-in);
+      }
     }
   }
 }

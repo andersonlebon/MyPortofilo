@@ -690,6 +690,7 @@
   font-size: 14px;
   font-weight: 400;
   padding: 5px 14px;
+  outline: 1px solid #f3c92f00;
 }
 
 .contact form input:hover::-webkit-input-placeholder,
@@ -725,9 +726,16 @@
   letter-spacing: 0.025em;
   border: 0;
   border-radius: 0;
-  padding: 1.1em 1.2em;
+  padding: 0.7em 1.2em;
   background-color: black;
   color: #fff;
+}
+
+.contact form .submit-btn:hover {
+  background-color: #f3ca2f;
+  color: black;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 *::after,
@@ -758,8 +766,9 @@ ul {
 
 input:focus,
 textarea:focus {
-  border: none;
-  outline: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  outline: 1px solid #f3c92f5b !important;
   color: #fff;
 }
 
