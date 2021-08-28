@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import url(/home/anderson/Documents/projectes/my-portfolio/node_modules/bootstrap/dist/css/bootstrap.min.css);
 .text-yellow {
   color: #f3ca2f;
 }
@@ -680,10 +681,11 @@
 }
 
 body {
+  background-color: #272727;
   overflow-x: hidden;
   font-size: 1rem;
-  font-family: Poppins, sans-serif !important;
-  font-size: 14px !important;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
   line-height: 30px;
 }
 
@@ -694,8 +696,8 @@ ul {
 }
 
 a {
-  color: #272727 !important;
-  text-decoration: none !important;
+  color: #272727;
+  text-decoration: none;
 }
 
 .lang li {
@@ -706,7 +708,7 @@ a {
 
 .lang li:hover {
   cursor: pointer;
-  color: #f3ca2f !important;
+  color: #f3ca2f;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -726,7 +728,7 @@ footer {
 .anim-section {
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
-  display: none !important;
+  display: none;
 }
 
 ol {
@@ -743,7 +745,7 @@ ol li {
 }
 
 ol li:hover {
-  color: #ffff !important;
+  color: #ffff;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
