@@ -22,7 +22,9 @@ const Skils = () => {
   return (
     <div className="skils">
       <ul className="languages d-flex">
-        <Skill Logo={IoLogoJavascript} label="JavaScript" />
+        {SkilsData.language.map((skill) => (
+          <Skill Logo={skill.logo} label={skill.label} />
+        ))}
       </ul>
     </div>
   );
