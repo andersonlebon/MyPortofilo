@@ -1,7 +1,7 @@
 import React from "react";
 
 const Project = (props) => {
-  const { description, title, date, type, image } = props.project;
+  const { description, title, date, type, image, projImage } = props.project;
 
   let bgStyle = {
     backgroundImage: `url(${image})`,
@@ -17,9 +17,6 @@ const Project = (props) => {
       style={bgStyle}
       className="projects d-flex justify-content-center align-items-center"
     >
-      {/* <div className="bg-img">
-        <img src={image} alt="" srcset="" />
-      </div> */}
       <div className="d-flex justify-content-center">
         <h3 className=" vertical-text">CONTACT ME{props.title}</h3>
         <div className="projects-carousel d-flex justify-content-between">
@@ -29,6 +26,9 @@ const Project = (props) => {
               <span className="text-yellow">{"> "}</span>
               {title}
             </h2>
+            <div className="proj-img">
+              <img src={projImage} alt="" srcset="" />
+            </div>
             <p className="p-small">{description}</p>
             <div className="btns">
               <button typp="button" className="black-btn">
