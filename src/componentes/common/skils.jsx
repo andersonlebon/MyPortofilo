@@ -6,29 +6,23 @@ import {
   IoLogoHtml5,
   IoLogoReact,
 } from "react-icons/io";
+import { DiRuby } from "react-icons/di";
+import Skill from "./skill";
+
+const SkilsData = {
+  language: [
+    { label: "Javascript", logo: IoLogoJavascript },
+    { label: "HTML", logo: IoLogoHtml5 },
+    { label: "Ruby", logo: DiRuby },
+    { label: "CSS", logo: IoLogoCss3 },
+  ],
+};
 
 const Skils = () => {
   return (
     <div className="skils">
       <ul className="languages d-flex">
-        <div className="language-item d-flex justify-content-center align-items-center flex-column">
-          <div className="lang-icon d-flex justify-content-center align-items-center">
-            <IoLogoJavascript />
-          </div>
-          <span className="lag-label">JavaScript</span>
-        </div>
-        <div className="language-item d-flex justify-content-center align-items-center flex-column">
-          <div className="lang-icon d-flex justify-content-center align-items-center">
-            <IoLogoCss3 />
-          </div>
-          <span className="lag-label">CSS</span>
-        </div>
-        <div className="language-item d-flex justify-content-center align-items-center flex-column">
-          <div className="lang-icon d-flex justify-content-center align-items-center">
-            <IoLogoHtml5 />
-          </div>
-          <span className="lag-label">HTML</span>
-        </div>
+        <Skill Logo={IoLogoJavascript} label="JavaScript" />
       </ul>
     </div>
   );

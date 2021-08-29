@@ -11,7 +11,6 @@ const Project = (props) => {
     backgroundSize: "130%",
   };
 
-  console.log(bgStyle);
   return (
     <section
       style={bgStyle}
@@ -27,7 +26,7 @@ const Project = (props) => {
               {title}
             </h2>
             <div className="proj-img">
-              <img className="w-100 h-100" src={projImage} alt="" srcset="" />
+              <img className="w-100 h-100" src={projImage} alt="Demo pict" />
               <p className="p-small">{description}</p>
             </div>
             <div className="btns mt-5">
