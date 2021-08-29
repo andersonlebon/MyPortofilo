@@ -1,20 +1,13 @@
+import Carousel from "react-elastic-carousel";
 import React, { Component } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
 import bg from "../images/pngwing.com.png";
+import About from "./about-section";
+import Contact from "./contact";
+import Projects from "./projects";
 import Services from "./services";
 
 class Home extends Component {
   state = {};
-  section = React.createRef();
-
-  componentDidMount() {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        console.log(window.scrollY);
-        this.section.current.classList.toggle("anim-section");
-      }
-    });
-  }
   section = React.createRef();
 
   handlScroll = () => {};
@@ -39,6 +32,9 @@ class Home extends Component {
           </div>
         </section>
         <Services />
+        <Projects />
+        <About />
+        <Contact />
       </>
     );
   }

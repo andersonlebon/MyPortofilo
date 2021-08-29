@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import Navigation from "./componentes/common/navigation";
 import Footer from "./componentes/common/footer";
 import About from "./componentes/about-section";
+import Contact from "./componentes/contact";
 
 class App extends Component {
   state = {};
@@ -15,6 +16,7 @@ class App extends Component {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
+          <Route path="/contact" exact component={Contact} />
         </Switch>
         <Route path="/" component={Footer} />
       </main>
