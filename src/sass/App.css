@@ -749,9 +749,11 @@
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   -webkit-animation: bgAnim 80s ease-in-out infinite;
           animation: bgAnim 80s ease-in-out infinite;
+  background-size: 100%;
 }
 
 .projects h3 {
@@ -840,13 +842,13 @@
 
 @-webkit-keyframes bgAnim {
   0% {
-    background-size: 100%;
+    background-size: 130%;
   }
   25% {
     background-size: 200%;
   }
   50% {
-    background-size: 100%;
+    background-size: 130%;
   }
   75% {
     background-size: 200%;
@@ -858,13 +860,13 @@
 
 @keyframes bgAnim {
   0% {
-    background-size: 100%;
+    background-size: 130%;
   }
   25% {
     background-size: 200%;
   }
   50% {
-    background-size: 100%;
+    background-size: 130%;
   }
   75% {
     background-size: 200%;
@@ -872,6 +874,31 @@
   100% {
     background-size: 100%;
   }
+}
+
+.proj-img {
+  width: 80%;
+  height: 400px;
+  position: relative;
+}
+
+.proj-img p {
+  display: none;
+}
+
+.proj-img:hover {
+  cursor: pointer;
+}
+
+.proj-img:hover p {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(51, 51, 51, 0.925);
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
 }
 
 *::after,

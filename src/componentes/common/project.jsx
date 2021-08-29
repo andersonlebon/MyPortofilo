@@ -8,16 +8,16 @@ const Project = (props) => {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center center",
     // backgroundSize: "cover",
-    backgroundSize: "100%",
+    backgroundSize: "130%",
   };
 
   console.log(bgStyle);
   return (
     <section
       style={bgStyle}
-      className="projects d-flex justify-content-center align-items-center"
+      className="projects d-flex w-100 align-items-center"
     >
-      <div className="d-flex justify-content-center">
+      <div className="d-flex w-100 justify-content-center">
         <h3 className=" vertical-text">CONTACT ME{props.title}</h3>
         <div className="projects-carousel d-flex justify-content-between">
           <div className="proj-info">
@@ -27,10 +27,10 @@ const Project = (props) => {
               {title}
             </h2>
             <div className="proj-img">
-              <img src={projImage} alt="" srcset="" />
+              <img className="w-100 h-100" src={projImage} alt="" srcset="" />
+              <p className="p-small">{description}</p>
             </div>
-            <p className="p-small">{description}</p>
-            <div className="btns">
+            <div className="btns mt-5">
               <button typp="button" className="black-btn">
                 See Project
               </button>
