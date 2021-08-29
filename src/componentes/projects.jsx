@@ -4,6 +4,7 @@ import Project from "./common/project";
 import bg2 from "../images/download.jpg";
 import bg1 from "../images/bgbook.jpg";
 import bg3 from "../images/download2.jpg";
+import pImage from "../images/icinema.png";
 
 const Projects = () => {
   const projects = [
@@ -15,6 +16,7 @@ const Projects = () => {
       corrupti optio deleniti? Quae consequuntur deserunt quia maxime alias,
       sunt eaque?`,
       image: bg1,
+      projImage: pImage,
       projectLink: "github",
       date: "Jun 2021",
       type: "WebSite App",
