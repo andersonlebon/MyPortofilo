@@ -21,11 +21,11 @@ const SkilsData = {
 const Skils = () => {
   return (
     <div className="skils">
-      <ul className="languages d-flex">
+      <Carousel className="languages d-flex">
         {SkilsData.language.map((skill) => (
           <Skill Logo={skill.logo} label={skill.label} />
         ))}
-      </ul>
+      </Carousel>
     </div>
   );
 };
