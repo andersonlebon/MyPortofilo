@@ -1,6 +1,7 @@
 import React from "react";
 import "react-sweet-progress/lib/style.css";
 import ProgressBar from "@ramonak/react-progress-bar";
+import Skils from "./common/skils";
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hestiate to contact me.
           </p>
+          <Skils />
         </div>
       </div>
       <div className="about-progress text-small w-50 p-5">
