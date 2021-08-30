@@ -17,14 +17,14 @@ class Home extends Component {
         <section
           onScroll={this.handlScroll}
           ref={this.section}
-          className="home-section justify-content-center align-items-center p-5 d-flex"
+          className="home-section justify-content-between align-items-center p-5 d-flex"
         >
-          <div className="home-text text-white d-flex align-items-start justify-content-between">
+          <div className="home-text text-white d-flex align-items-start justify-content-start">
             <h3 className="vertical-text">INTRODUCE</h3>
             <h1 className="hello text-bold">
               <span className="text-yellow ">HELLO</span> MY NAME IS <br />
               <span className="text-yellow name"> ANDERSON</span>, I AM A <br />
-              SOFTWARE DEVELOPPER
+              SOFTWARE DEVELOPPER.
             </h1>
           </div>
           <div className="home-bg w-50">

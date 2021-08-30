@@ -2,8 +2,10 @@
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   animation: bgAnim 80s ease-in-out infinite;
+  background-size: 100%;
   h3 {
     align-self: flex-start;
   }
@@ -82,14 +84,14 @@
 
 @keyframes bgAnim {
   0% {
-    background-size: 100%;
+    background-size: 130%;
   }
   25% {
     background-size: 200%;
   }
 
   50% {
-    background-size: 100%;
+    background-size: 130%;
   }
   75% {
     background-size: 200%;
@@ -97,13 +99,26 @@
   100% {
     background-size: 100%;
   }
-  // 0% {
-  //   background-size: 1005 !important;
-  //   transition: all 0.5s ease-in;
-  // }
+}
 
-  // 100% {
-  //   transition: all 0.5s ease-in;
-  //   background-size: 50% !important;
-  // }
+.proj-img {
+  width: 80%;
+  height: 400px;
+  position: relative;
+  p {
+    display: none;
+  }
+  &:hover {
+    cursor: pointer;
+    p {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      background-color: rgba(51, 51, 51, 0.925);
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 10px;
+    }
+  }
 }
