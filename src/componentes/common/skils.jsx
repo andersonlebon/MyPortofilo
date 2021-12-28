@@ -21,7 +21,8 @@ const SkilsData = {
 const Skils = () => {
   return (
     <div className="skils">
-      <Carousel className="languages d-flex">
+      <h3>Languages</h3>
+      <Carousel className="languages d-flex" itemsToShow={3}>
         {SkilsData.language.map((skill) => (
           <Skill Logo={skill.logo} label={skill.label} />
         ))}

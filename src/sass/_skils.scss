@@ -1,24 +1,35 @@
-.lag-label {
-  font-size: 0.8rem;
-  color: $text-small;
-  line-height: 18px;
-}
+.skils {
+  .lag-label {
+    font-size: 0.8rem;
+    color: $text-small;
+    line-height: 18px;
+  }
 
-.language-item {
-  width: 130px;
-  background-color: #333;
-  margin: 0 7px;
-  padding: 10px;
-  gap: 10px;
-  border-radius: 5px;
-}
+  .language-item {
+    width: 130px;
+    background-color: #333;
+    margin: 0 7px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+  }
 
-.lang-icon {
-  background-color: $text-primary;
-  width: 35px;
-  height: 35px;
-  margin: 2px;
-  border-radius: 48%;
-  font-size: 1.55rem;
-  box-shadow: 0 0 1px 2px white;
+  .lang-icon {
+    background-color: $text-primary;
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+    border-radius: 48%;
+    font-size: 1.55rem;
+    box-shadow: 0 0 1px 2px white;
+  }
+
+  .rec-arrow {
+    display: none;
+  }
+  .rec-pagination {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -35px;
+  }
 }
