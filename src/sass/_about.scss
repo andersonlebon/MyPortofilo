@@ -8,7 +8,8 @@
     font-size: 35px;
   }
 
-  .about-progress {
+  .about-exp {
+    font-size: 12px;
     .label {
       padding-right: 38px;
     }
@@ -21,6 +22,11 @@
       }
     }
   }
+}
+
+.font-size-12 {
+  font-size: 12px;
+  line-height: 25px;
 }
 
 .smal-title {

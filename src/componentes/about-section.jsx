@@ -20,68 +20,54 @@ const About = () => {
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hestiate to contact me.
           </p>
-          <Skils />
+          <ul className="w-75 font-size-12 ">
+            <li className="w-100">
+              <div className="d-flex label w-100 justify-content-between">
+                <span>Development</span> <span>80%</span>
+              </div>
+              <ProgressBar
+                bgColor="#f3ca2f"
+                completed={80}
+                height="8px"
+                labelAlignment="outside"
+                labelColor="#272727"
+                labelSize="10"
+                transitionDuration="3s"
+              />
+            </li>
+            <li>
+              <div className="d-flex label w-100 justify-content-between">
+                <span>Development</span> <span>68%</span>
+              </div>
+              <ProgressBar
+                bgColor="#f3ca2f"
+                completed={68}
+                height="8px"
+                labelAlignment="outside"
+                labelColor="#272727"
+                labelSize="10"
+                transitionDuration="3s"
+              />
+            </li>
+            <li>
+              <div className="d-flex label w-100 justify-content-between">
+                <span>Development</span> <span>75%</span>
+              </div>
+              <ProgressBar
+                bgColor="#f3ca2f"
+                completed={75}
+                height="8px"
+                labelAlignment="outside"
+                labelColor="#272727"
+                labelSize="10"
+                transitionDuration="3s"
+              />
+            </li>
+          </ul>
         </div>
       </div>
-      <div className="about-progress text-small w-50 p-5">
-        <ul className="w-75">
-          <li className="w-100">
-            <div className="d-flex label w-100 justify-content-between">
-              <span>Development</span> <span>80%</span>
-            </div>
-            <ProgressBar
-              bgColor="#f3ca2f"
-              completed={80}
-              height="8px"
-              labelAlignment="outside"
-              labelColor="#272727"
-              labelSize="10"
-              transitionDuration="3s"
-            />
-          </li>
-          <li>
-            <div className="d-flex label w-100 justify-content-between">
-              <span>Development</span> <span>68%</span>
-            </div>
-            <ProgressBar
-              bgColor="#f3ca2f"
-              completed={68}
-              height="8px"
-              labelAlignment="outside"
-              labelColor="#272727"
-              labelSize="10"
-              transitionDuration="3s"
-            />
-          </li>
-          <li>
-            <div className="d-flex label w-100 justify-content-between">
-              <span>Development</span> <span>75%</span>
-            </div>
-            <ProgressBar
-              bgColor="#f3ca2f"
-              completed={75}
-              height="8px"
-              labelAlignment="outside"
-              labelColor="#272727"
-              labelSize="10"
-              transitionDuration="3s"
-            />
-          </li>
-          <li>
-            <div className="d-flex label w-100 justify-content-between">
-              <span>Development</span> <span>60%</span>
-            </div>
-            <ProgressBar
-              bgColor="#f3ca2f"
-              completed={60}
-              height="8px"
-              labelAlignment="outside"
-              labelColor="#272727"
-              labelSize="10"
-              transitionDuration="3s"
-            />
-          </li>
-        </ul>
+      <div className="about-exp d-flex flex-column justify-content-center w-50 p-5">
+        <Skils />
       </div>
     </section>
   );

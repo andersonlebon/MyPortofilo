@@ -607,17 +607,26 @@
   font-size: 35px;
 }
 
-.about-section .about-progress .label, .services .about-progress .label {
+.about-section .about-exp, .services .about-exp {
+  font-size: 12px;
+}
+
+.about-section .about-exp .label, .services .about-exp .label {
   padding-right: 38px;
 }
 
-.about-section .about-progress ul, .services .about-progress ul {
+.about-section .about-exp ul, .services .about-exp ul {
   margin: 0;
   padding: 0;
 }
 
-.about-section .about-progress ul li, .services .about-progress ul li {
+.about-section .about-exp ul li, .services .about-exp ul li {
   margin: 40px 0;
+}
+
+.font-size-12 {
+  font-size: 12px;
+  line-height: 25px;
 }
 
 .smal-title {
@@ -901,14 +910,18 @@
   padding: 10px;
 }
 
+.skils h3 {
+  font-size: 1.1rem;
+}
+
 .skils .lag-label {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color: #9e9e9e;
   line-height: 18px;
 }
 
 .skils .language-item {
-  width: 130px;
+  width: 90px;
   background-color: #333;
   margin: 0 7px;
   padding: 10px;
@@ -918,11 +931,11 @@
 
 .skils .lang-icon {
   background-color: #f3ca2f;
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
   margin: 2px;
   border-radius: 48%;
-  font-size: 1.55rem;
+  font-size: 1rem;
   -webkit-box-shadow: 0 0 1px 2px white;
           box-shadow: 0 0 1px 2px white;
 }
@@ -935,6 +948,16 @@
   position: absolute;
   bottom: 0;
   margin-bottom: -35px;
+}
+
+.skils .rec-swipable {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.skils .languages {
+  width: 60%;
 }
 
 *::after,
