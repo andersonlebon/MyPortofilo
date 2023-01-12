@@ -2,6 +2,8 @@
   height: 100vh;
   font-size: 12px;
   background-color: $background-color;
+  position: relative;
+  z-index: 5;
 
   .about-text {
     line-height: 40px;
@@ -10,6 +12,15 @@
 
   .about-exp {
     font-size: 12px;
+      gap: 20px;
+
+    .skils {
+      gap: 20px;
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+    
     .label {
       padding-right: 38px;
     }
@@ -40,4 +51,28 @@
   color: $text-small;
   line-height: 24px;
   margin-top: 40px;
+}
+
+.lets-connect {
+
+  div {
+    gap: 20px;
+  }
+   a {
+      font-weight: 500;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      margin: 0.7em 0;
+      color: $text-primary;
+      border-bottom: 1px solid $text-primary;
+
+       svg{
+        font-size: 26px;
+        margin: 0 3px;
+       }
+       &:hover{
+        text-decoration: none;
+       }
+    }
 }

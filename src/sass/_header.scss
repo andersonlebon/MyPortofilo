@@ -15,7 +15,7 @@
 .header {
   @include animOpacity();
   position: fixed;
-  z-index: 2;
+  z-index: 10;
   top: 0;
   padding: 20px 50px;
   background-color: $background-color;
@@ -141,12 +141,12 @@
 }
 
 .menu-side {
-  // z-index: -100;
   @include animOpacity();
   transform: translateX(100%) scale(0.5);
   @include transition(0.8s, ease);
   height: 0vh;
   position: fixed;
+  z-index: 10;
   padding: 60px 6%;
   color: $text-small !important;
   background-color: $background-color;

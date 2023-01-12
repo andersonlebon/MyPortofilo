@@ -36,7 +36,7 @@ class Home extends Component {
             <div className="experience text-small">
               <div className="dots"></div>
               <div className="years-exp text-bold text-white align-items-end d-flex justify-center w-100">
-                <div className="number text-yellow">2</div>
+                <div className="number text-yellow">3</div>
                 <div className="years-text">
                   YEARS <br /> EXPERIENCE
                 </div>
@@ -47,9 +47,9 @@ class Home extends Component {
             <img src={bg} alt="home-bg" className="" />
           </div>
         </section>
-        <Services />
-        <Projects />
+        {/* <Services /> */}
         <About />
+        <Projects />
         <Contact />
       </>
     );
