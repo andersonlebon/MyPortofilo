@@ -63,6 +63,7 @@ footer {
   color: $text-small;
   padding: 15px 50px;
   z-index: 1;
+  background-color: $background-color;
 }
 
 .scrolll {
@@ -102,4 +103,5 @@ ol li::before {
 
 section {
   padding: 0 50px;
+  // border-bottom: 1px solid #f3c92f5b !important;
 }

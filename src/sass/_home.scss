@@ -1,12 +1,13 @@
 .home-section {
   width: 100%;
-  height: 100vh !important;
+  height: 100% !important;
   background-color: $background-color;
+  position: relative;
 
   .hello {
     position: relative;
     font-size: 40px;
-    line-height: 53px;
+    line-height: 55px;
     padding-bottom: 100px;
     letter-spacing: -0.08rem;
 
@@ -21,6 +22,42 @@
       background: $text-primary;
     }
   }
+
+  .home-bg {
+    width: 50%;
+    position: absolute;
+    top: 80px;
+    right: 10%;
+    z-index: 1;
+
+    img {
+      width: 60%;
+      height: 100%;
+       animation: mainPhoto 80s ease infinite;
+    }
+  }
+  .home-text {
+    width: 50%;
+  }
+
+  .square {
+    position: absolute;
+    width: 90%;
+
+    height: 70%;
+    top: 150px;
+    right: 100px;
+    border: 5px solid #f3c92f5b !important;
+
+    button  {
+     border: 1px solid #f3c92f5b !important;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+  }
 }
 
 .vertical-text {
@@ -28,5 +65,90 @@
   text-orientation: sideways-right;
   transform: rotate(180deg);
   font-size: 14px;
-  margin-right: 80px;
+  margin: 0 50px;
 }
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+}
+
+@keyframes mainPhoto {
+  0% {
+   width: 60%;
+  }
+  25% {
+   width: 70%;
+  }
+
+  50% {
+   width:80%;
+  }
+  75% {
+   width: 70%;
+  }
+  100% {
+   width: 60%;
+  }
+}
+
+
+
+.experience {
+   position: absolute;
+   right: 20px;
+   bottom: 0;
+
+
+    .dots {
+      width: 350px;
+      height: 250px;
+      background-image: url(../images/download.png);
+      position: absolute;
+      bottom: -110px;
+      left: -50px;
+      z-index: 100;
+    }
+  }
+  .years-exp {
+    bottom: 0px;
+    .number {
+      // font-size: 150px;
+      padding: 0;
+      line-height: 1;
+      font-size: 18.71rem;
+    }
+    .years-text {
+      padding-bottom: 21px;
+      font-size: 1.571rem;
+      line-height: 1.181;
+      margin-left: -58px;
+    }
+  }
+
+  .hire-me {
+    position: absolute;
+    bottom: 80px;
+    left: 100px;
+    height: 100%;
+    gap: 15px;
+
+    a {
+      font-weight: 500;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      margin: 0.7em 0;
+      color: $text-primary;
+      border-bottom: 1px solid $text-primary;
+
+       svg{
+        font-size: 26px;
+        margin: 0 3px;
+       }
+       &:hover{
+        text-decoration: none;
+       }
+    }
+  }

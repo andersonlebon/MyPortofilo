@@ -1,44 +1,10 @@
 .services {
+     position: relative;
+    z-index: 10;
   @extend .about-section;
   .s-text {
     margin: 0 30px;
   }
 
-  .experience {
-    position: relative;
-    width: 450px;
-    height: 580px;
-    z-index: 1;
-
-    .my-image {
-      width: 90%;
-      height: 80%;
-      z-index: 2;
-    }
-
-    .dots {
-      width: 350px;
-      height: 250px;
-      background-image: url(../images/download.png);
-      position: absolute;
-      bottom: -110px;
-      left: -50px;
-      z-index: 100;
-    }
-  }
-  .years-exp {
-    position: absolute;
-    bottom: 0px;
-    .number {
-      // font-size: 150px;
-      padding: 0;
-      line-height: 1;
-      font-size: 10.71rem;
-    }
-    .years-text {
-      padding-bottom: 28px;
-      font-size: 1.571rem;
-      line-height: 1.181;
-    }
-  }
+  
 }

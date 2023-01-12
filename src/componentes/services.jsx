@@ -1,5 +1,5 @@
 import React from "react";
-import caleb from "../images/gitprof.png";
+import caleb from "../images/gitprof3.png";
 
 const Services = () => {
   return (
@@ -22,18 +22,7 @@ const Services = () => {
           </ol>
         </div>
       </div>
-      <div className="experience text-small mr-5 pr-5">
-        <div className="my-image">
-          <img className="w-100 h-100" src={caleb} alt="My figure" />
-        </div>
-        <div className="dots"></div>
-        <div className="years-exp text-bold text-white align-items-end d-flex justify-center w-100">
-          <div className="number text-yellow">2</div>
-          <div className="years-text">
-            YEARS <br /> EXPERIENCE
-          </div>
-        </div>
-      </div>
+     
     </section>
   );
 };
