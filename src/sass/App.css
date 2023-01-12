@@ -908,7 +908,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0;
-  height: 100%;
+  height: 90vh;
   width: 100%;
   -webkit-animation: bgAnim 80s ease-in-out infinite;
           animation: bgAnim 80s ease-in-out infinite;
@@ -920,14 +920,42 @@
       align-self: flex-start;
 }
 
+.projects .projects-container {
+  padding-right: 80px;
+}
+
 .projects .projects-carousel {
-  padding: 0 140px 80px 0;
   width: 100%;
 }
 
 .projects p {
   width: 100%;
   padding-bottom: 40px;
+}
+
+.projects .proj-date {
+  width: 55%;
+}
+
+.projects .proj-date .project-img {
+  width: 600px;
+  height: 380px;
+  background-color: #3c3b3bba;
+  border-radius: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 30px;
+  box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.84);
+  -webkit-box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.84);
+  -moz-box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.84);
+}
+
+.projects .proj-date .project-img img {
+  width: 70%;
+  height: 80%;
+  -webkit-box-shadow: 11px 14px 22px 1px #272727;
+          box-shadow: 11px 14px 22px 1px #272727;
+  border-radius: 10px;
 }
 
 .projects .proj-date p {
@@ -948,6 +976,11 @@
   width: 40%;
 }
 
+.proj-info p {
+  padding: 0;
+  margin: 0;
+}
+
 .rec-slider-container {
   margin: 0 !important;
 }
@@ -958,7 +991,7 @@
 
 .rec-pagination {
   position: absolute;
-  bottom: 30px;
+  bottom: 60px;
 }
 
 .rec-dot {
@@ -1058,6 +1091,41 @@
   bottom: 0;
   margin: 0;
   padding: 10px;
+}
+
+.tools li {
+  background-color: #3c3b3bba;
+  font-size: .9rem;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.tools li:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #f3ca2f;
+  cursor: pointer;
+}
+
+.project-stacks {
+  margin: 10px 0 10px 15px;
+  padding: 0;
+  gap: 30px;
+  font-size: 1rem;
+  list-style-type: disc;
+}
+
+.project-stacks li::marker {
+  color: #f3ca2f;
+}
+
+.project-stacks :hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #f3ca2f;
+  cursor: pointer;
 }
 
 .skils h3 {
@@ -1206,5 +1274,8 @@ ol li::before {
 
 section {
   padding: 0 50px;
+  box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.36);
+  -webkit-box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.36);
+  -moz-box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.36);
 }
 /*# sourceMappingURL=App.css.map */

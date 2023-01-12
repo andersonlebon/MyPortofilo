@@ -13,11 +13,10 @@ const Project = (props) => {
 
   return (
     <section
-      style={bgStyle}
       className="projects d-flex w-100 align-items-center"
     >
-      <div className="d-flex w-100 justify-content-center">
-        <h3 className=" vertical-text">CONTACT ME{props.title}</h3>
+      <div className="projects-container d-flex w-100 justify-content-center">
+        <h3 className=" vertical-text">FEATURED WORKS</h3>
         <div className="projects-carousel d-flex justify-content-between">
           <div className="proj-info">
             <h4 className="smal-title">FEATURED WORKS</h4>
@@ -25,19 +24,33 @@ const Project = (props) => {
               <span className="text-yellow">{"> "}</span>
               {title}
             </h2>
-            <div className="proj-img">
-              <img className="w-100 h-100" src={projImage} alt="Demo pict" />
               <p className="p-small">{description}</p>
-            </div>
+              <ul className="tools p-small d-flex">
+                <li>Ruby</li>
+                <li>JavaSript</li>
+                <li>Reactjs</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SASS</li>
+              </ul>
+              <ul className="project-stacks d-flex p-small">
+                <li>Frontend</li>
+                <li>Fullstack</li>
+                <li>Frontennd</li>
+              </ul>
             <div className="btns mt-5">
               <button typp="button" className="black-btn">
                 See Project
               </button>
             </div>
           </div>
-          <div className="proj-date">
+          <div className="proj-date d-flex flex-column align-items-end">
             <p>{date}</p>
             <p className="type text-yellow">{type}</p>
+
+            <div className="project-img d-flex justify-content-center align-items-center">
+              <img src={projImage} alt="" className=""/>
+            </div>
           </div>
         </div>
       </div>

@@ -104,4 +104,7 @@ ol li::before {
 section {
   padding: 0 50px;
   // border-bottom: 1px solid #f3c92f5b !important;
+  box-shadow: -71px 100px 221px 85px rgba(60,59,59,0.36);
+-webkit-box-shadow: -71px 100px 221px 85px rgba(60,59,59,0.36);
+-moz-box-shadow: -71px 100px 221px 85px rgba(60,59,59,0.36);
 }
