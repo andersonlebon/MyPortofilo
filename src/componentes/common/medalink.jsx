@@ -8,11 +8,7 @@ const MediaLink = (props) => {
   return (
     <nav className={props.color}>
       <ul className="d-flex w-100 align-items-center justify-content-start">
-        <li>
-          <Link to="" className="navbar-item">
-            <CgFacebook />
-          </Link>
-        </li>
+
         <li>
           <Link to="" className="navbar-item">
             <AiFillGithub />
@@ -26,6 +22,11 @@ const MediaLink = (props) => {
         <li>
           <Link to="" className="navbar-item">
             <FaAngellist />
+          </Link>
+        </li>
+                <li>
+          <Link to="" className="navbar-item">
+            <CgFacebook />
           </Link>
         </li>
       </ul>

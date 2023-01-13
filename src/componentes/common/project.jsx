@@ -21,7 +21,7 @@ const Project = (props) => {
           <div className="proj-info">
             <h4 className="smal-title">FEATURED WORKS</h4>
             <h2 className="title ">
-              <span className="text-yellow">{"> "}</span>
+              <span className="text-yellow ">{"> "}</span>
               {title}
             </h2>
               <p className="p-small">{description}</p>

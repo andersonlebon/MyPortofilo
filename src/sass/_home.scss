@@ -8,8 +8,9 @@
     position: relative;
     font-size: 40px;
     line-height: 55px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     letter-spacing: -0.08rem;
+    margin-bottom: 1.8rem;
 
     &::after {
       content: "";
@@ -33,7 +34,7 @@
     img {
       width: 60%;
       height: 100%;
-       animation: mainPhoto 80s ease infinite;
+      //  animation: mainPhoto 80s ease infinite;
     }
   }
   .home-text {
@@ -65,7 +66,7 @@
   text-orientation: sideways-right;
   transform: rotate(180deg);
   font-size: 14px;
-  margin: 0 50px;
+  margin: 0 3rem;
 }
 
 @media (max-width: 768px) {

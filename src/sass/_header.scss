@@ -15,7 +15,7 @@
 .header {
   @include animOpacity();
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   top: 0;
   padding: 20px 50px;
   background-color: $background-color;
@@ -31,12 +31,23 @@
       margin: 0 11px;
     }
   }
-  .white ul li a {
-    color: $text-white !important;
-    &:hover {
-      color: $text-primary !important;
-      @include transition(0.3s, ease-in-out);
+ 
+  .logo {
+    h2 {
+      margin: 0;
+      padding: 0;
     }
+      &:hover{
+        text-decoration: none;
+        h2{
+          color: $text-primary;
+          transition: all 0.8s ease-in-out;
+          span {
+            color: $text-white;
+          }
+
+        }
+      }
   }
   .small-color ul li a {
     color: $text-small !important;
@@ -50,7 +61,6 @@
     position: relative;
     height: 15px;
     width: 20px;
-    margin-left: auto;
 
     div {
       @include animOpacity();
@@ -86,7 +96,6 @@
     height: 20px;
     justify-content: space-evenly;
     width: 20px;
-    margin-left: auto;
     position: relative;
 
     & div:nth-child(2) {
@@ -126,6 +135,8 @@
   }
 }
 
+
+
 @keyframes animMenu {
   0% {
     height: 20px;
@@ -153,7 +164,7 @@
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 25px 0px;
   right: 0;
   bottom: 0;
-  width: 30%;
+    width: 400px;
   .lang li {
     font-size: 13px;
     margin: 0 20px 0 0;
@@ -194,3 +205,24 @@
   height: 100vh !important;
   @include transition(0.8s, ease);
 }
+
+
+ .white ul li a {
+    color: $text-white;
+    &:hover {
+      color: $text-primary !important;
+      @include transition(0.3s, ease-in-out);
+    }
+  }
+
+
+  @media screen and (max-width: 700px) {
+    .header {
+      .white {
+       display: none;
+      }
+    }
+    .menu-side {
+      width: 90% 
+    }
+  }

@@ -23,9 +23,11 @@ class Navigation extends Component {
   };
   render() {
     return (
-      <header className="header d-flex w-100 align-items-center">
+      <header className="header d-flex w-100 justify-content-between align-items-center">
         <Link to="home" className="logo w-25">
-          LOGO
+          <h2 className="title d-flex">
+            <span className="text-yellow">{"<"}/</span>Caleb<span className="text-yellow">{">"}.</span>
+            </h2>
         </Link>
         <MediaLink color="white" />
         <Link

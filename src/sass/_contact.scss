@@ -1,13 +1,22 @@
 .contact {
-  //   height: auto;
-  //   background-color: aquamarine;
-
+    padding: 30px 80px 0 50px;
+    h3 {
+      margin-top: 8.2rem;
+    }
   form {
-    row-gap: 30px;
-    width: 92%;
+    row-gap: 20px;
+    width: 50%;
     .mail-name {
       column-gap: 25px;
     }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    h2 {
+      margin: 0 0 15px 0;
+    }
+
 
     input,
     textarea {
@@ -25,9 +34,18 @@
         }
       }
     }
+    textarea {
+      height: 180px;
+    }
   }
+
+
 }
 
+.contact-container {
+  gap: 50px;
+  align-self: center;
+}
 .black-btn {
   width: 170px;
   letter-spacing: 0.025em;
@@ -36,6 +54,7 @@
   padding: 0.7em 1.2em;
   background-color: black;
   color: #fff;
+  border: 2px solid #f3c92f5b !important;
 
   &:hover {
     background-color: $text-primary;
@@ -46,6 +65,94 @@
 
 .title {
   font-weight: 900;
-  margin-bottom: 3.3rem;
+  margin-bottom: 2.3rem;
   font-size: 2.5rem;
+            color: $text-white;
+    &:hover{
+      cursor: pointer;
+      color: $text-primary;
+      transition: all 0.8s ease-in-out;
+        text-decoration: none;
+        h2, span{
+          color: $text-white;
+          span {
+          }
+
+        }
+      }
+}
+
+.contact-info {
+  width: 50%;
+  h2 {
+    margin-left: 50px;
+    margin-bottom: 10px;
+
+  }
+
+   p {
+    margin: 20px 0;
+    font-size: 1.3rem;
+    line-height: 30px;
+   }
+
+
+   ul {
+    gap: 15px;
+    margin: 10px 0 20px 0;
+    a {
+      color: $text-small;
+      font-size: 1.3rem;
+      gap: 20px;
+    }
+   }
+}
+
+.contact-pointer {
+  animation: pointing 2s ease infinite;
+  
+}
+
+@keyframes pointing {
+  0% {
+    transform: translateX(0);
+    transition: all 0.5s ease;
+  }
+
+  50% {
+    transform: translateX(-50px);
+
+    transition: all 0.5s ease;
+
+
+  }
+
+    100% {
+    transform: translateX(0);
+    transition: all 0.5s ease;
+  }
+}
+
+
+.address-icon-wrapper {
+    background-color: #333;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact, .home-section {
+     .white ul {
+      position: relative;
+      z-index: 10;
+    margin: 1rem 0;
+    gap: 15px;
+    li a {
+    font-size: 40px;
+    color: $text-small;
+  }
+}
 }

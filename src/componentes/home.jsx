@@ -5,6 +5,7 @@ import About from "./about-section";
 import Contact from "./contact";
 import Projects from "./projects";
 import Services from "./services";
+import MediaLink from "./common/medalink";
 
 class Home extends Component {
   state = {};
@@ -17,11 +18,14 @@ class Home extends Component {
         <section className="home-section justify-content-between align-items-center p-5 d-flex">
           <div className="home-text text-white d-flex align-items-start justify-content-start">
             <h3 className="vertical-text">INTRODUCE</h3>
-            <h1 className="hello text-bold">
+            <div>
+              <h1 className="hello text-bold">
               <span className="text-yellow ">HELLO</span> MY NAME IS <br />
               <span className="text-yellow name"> ANDERSON</span>, I AM A <br />
               FULL STACK DEVELOPPER.
             </h1>
+            <MediaLink color="white" />
+            </div>
           </div>
           <div className="square d-flex justify-content-between">
             <div className="hire-me d-flex align-items-end">
@@ -47,7 +51,7 @@ class Home extends Component {
             <img src={bg} alt="home-bg" className="" />
           </div>
         </section>
-        {/* <Services /> */}
+        <Services />
         <About />
         <Projects />
         <Contact />
