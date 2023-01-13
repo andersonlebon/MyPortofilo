@@ -119,6 +119,10 @@
     &::after{
       transform: rotate(115deg) translate(140px, 108px);
     }
+    &::before {
+      transform: rotate(-115deg) translate(-303px, 40px);
+left: 0;
+    }
   }
   }
   .services-tec {

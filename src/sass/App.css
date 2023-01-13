@@ -997,6 +997,53 @@
   text-decoration: none;
 }
 
+@media (max-width: 900px) {
+  .about-section, .services {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-section .vertical-text, .services .vertical-text {
+    display: none;
+  }
+  .about-section .about-text, .services .about-text {
+    width: 90% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .about-section ul, .services ul {
+    width: 100% !important;
+  }
+  .about-section p, .services p {
+    width: 95% !important;
+    text-align: center;
+  }
+  .about-section .text-bold, .services .text-bold {
+    text-align: start;
+    margin-bottom: 0;
+  }
+  .about-section .about-exp, .services .about-exp {
+    width: 90% !important;
+    margin: 0 !important;
+    padding: 50px 0 30px 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-section .about-exp .skils .languages, .services .about-exp .skils .languages {
+    width: 100%;
+  }
+  .about-section .black-btn, .services .black-btn {
+    width: 120px;
+  }
+}
+
 .services {
   position: relative;
   z-index: 5;
@@ -1156,6 +1203,11 @@
   .services .before-after::after {
     -webkit-transform: rotate(115deg) translate(140px, 108px);
             transform: rotate(115deg) translate(140px, 108px);
+  }
+  .services .before-after::before {
+    -webkit-transform: rotate(-115deg) translate(-303px, 40px);
+            transform: rotate(-115deg) translate(-303px, 40px);
+    left: 0;
   }
   .services-tec {
     width: 90%;
