@@ -7,14 +7,14 @@ import mobile from "../images/mobile.png";
 const Services = () => {
   return (
     <section className="services text-white d-flex align-items-center">
-      <div className="d-flex align-items-start about-text pr-5">
+      <div className="d-flex service-text align-items-start about-text">
         <h3 className=" vertical-text">SERVICES</h3>
         <div className="d-flex flex-column align-items-between">
           <h4 className="smal-title mb-5">My Services</h4>
           <p className="text-bold">
             I LIKE <span className="text-yellow"> TO MAKE </span> THINGS
-            <br />
-            EASY AND FUN
+            <br /> 
+            {" "}EASY AND FUN
           </p>
           <ol className="p-small d-flex flex-column">
             <li>DEVELOPMENT</li>
