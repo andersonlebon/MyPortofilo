@@ -2,6 +2,8 @@
   width: 100%;
   background-color: $background-color;
   position: relative;
+  height: 100vh !important;
+
 
   .hello {
     position: relative;
@@ -241,10 +243,11 @@
     }
     .hire-me {
       justify-content: flex-end;
-      flex-direction: column;
       left: 80px;
       bottom: 120px;
       z-index: 10;
+      flex-direction: column !important;
+align-items: flex-start !important;
     }
   }
 

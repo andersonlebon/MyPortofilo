@@ -106,3 +106,35 @@ section {
 -webkit-box-shadow: -71px 100px 221px 85px rgba(60,59,59,0.36);
 -moz-box-shadow: -71px 100px 221px 85px rgba(60,59,59,0.36);
 }
+
+// main {
+//   scroll-snap-type: y mandatory;
+//   overflow-y: scroll;
+//   height: 100vh;
+// }
+
+@supports (scrollbar-color: $text-black $text-primary) {
+  * {
+    scrollbar-color: $text-primary $text-black;
+    scrollbar-width: thin;
+  }
+}
+
+  ::-webkit-scrollbar {
+    width: .4rem;
+  }
+  ::-webkit-scrollbar-track {
+  background: #f3c92f4d;
+
+
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $text-primary;
+    border-radius: 20px;
+    border: 3px solid $text-primary;
+  }
+
+::-webkit-scrollbar-track:hover {
+    background-color: $text-black;
+
+}

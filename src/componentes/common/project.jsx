@@ -16,16 +16,16 @@ const Project = (props) => {
       className="projects d-flex w-100 align-items-center"
     >
       <div className="projects-container d-flex w-100 justify-content-center">
-        <h3 className=" vertical-text">FEATURED WORKS</h3>
+        <h3 className=" vertical-text" data-aos="fade-down">FEATURED WORKS</h3>
         <div className="projects-carousel d-flex justify-content-between">
-          <div className="proj-info">
-            <h4 className="smal-title">FEATURED WORKS</h4>
-            <h2 className="title ">
+          <div className="proj-info" data-aos="fade-down">
+            <h4 className="smal-title" data-aos="fade-right">FEATURED WORKS</h4>
+            <h2 className="title " data-aos="fade-left">
               <span className="text-yellow ">{"> "}</span>
               {title}
             </h2>
-              <p className="p-small">{description}</p>
-              <ul className="tools p-small d-flex">
+              <p data-aos="zoom-in"  className="p-small">{description}</p>
+              <ul className="tools p-small d-flex" >
                 <li>Ruby</li>
                 <li>JavaSript</li>
                 <li>Reactjs</li>
@@ -45,11 +45,11 @@ const Project = (props) => {
             </div>
           </div>
           <div className="proj-date d-flex flex-column align-items-end">
-            <p>{date}</p>
-            <p className="type text-yellow">{type}</p>
+            <p data-aos="fade-left" >{date}</p>
+            <p data-aos="fade-left" className="type text-yellow">{type}</p>
 
-            <div className="project-img d-flex justify-content-center align-items-center">
-              <img src={projImage} alt="" className=""/>
+            <div className="project-img d-flex justify-content-center align-items-center" data-aos="fade-down">
+              <img src={projImage} alt="" className="" data-aos="flip-right"/>
             </div>
           </div>
         </div>

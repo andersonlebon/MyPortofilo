@@ -47,7 +47,7 @@ const Projects = () => {
     },
   ];
   return (
-    <Carousel>
+    <Carousel id="projects">
       {projects.map((item) => (
         <Project key={item.id} project={item} />
       ))}

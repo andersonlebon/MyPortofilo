@@ -2,6 +2,7 @@
      position: relative;
     z-index: 5;
     gap: 5rem;
+    width: 100%;
   @extend .about-section;
   .s-text {
     margin: 0 30px;
@@ -12,7 +13,7 @@
 
 .services-tec {
     color: $text-small;
-       animation: animstack 2s ease infinite;
+      //  animation: animstack 2s ease infinite;
     gap:4rem;
     width: 50%;
     .service-tec-wraper {

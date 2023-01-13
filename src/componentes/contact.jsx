@@ -3,16 +3,16 @@ import MediaLink from "./common/medalink";
 
 const Contact = () => {
   return (
-    <section className="contact d-flex align-items-start">
-      <h3 className=" vertical-text">CONTACT ME</h3>
+    <section  id="contacts" className="contact d-flex align-items-start">
+      <h3 className=" vertical-text" data-aos="fade-down">CONTACT ME</h3>
       <div className="contact-container w-100 d-flex justify-content-between">
         <form className="w-10 d-flex flex-column">
-          <h2 className="title">GET IN TOUCH</h2>
-          <p className="p-small">
+          <h2 className="title" data-aos="fade-righ">GET IN TOUCH</h2>
+          <p className="p-small" data-aos="fade-left">
             Question, comment or concern? this contact form is the best way to
             get in touch with me.
           </p>
-          <div className="mail-name d-flex justify-content-between">
+          <div className="mail-name d-flex justify-content-between" data-aos="flip-left">
             <input type="text" className="w-50" placeholder="Name*" />
             <input
               type="email"
@@ -20,31 +20,33 @@ const Contact = () => {
               className="w-50"
               id="email"
               placeholder="Email*"
+              data-aos="fade-down"
             />
           </div>
-          <input type="text" placeholder="Subject(Optional)" />
+          <input type="text" data-aos="fade-down" placeholder="Subject(Optional)" />
           <textarea
+            data-aos="zoom-in"
             name="message"
             cols="30"
             rows="10"
             placeholder="Message*"
           ></textarea>
-          <button className="black-btn" type="submit">
+          <button className="black-btn" type="submit " data-aos="fade-up">
             Post Comment
           </button>
         </form>
         <div className="contact-info d-flex flex-column align-items-start">
-          <h2 className="title d-flex">
+          <h2 className="title d-flex" data-aos="fade-left">
             <div className="text-yellow contact-pointer">{"> "}</div>
             Contact <span className="text-yellow">.</span>
           </h2>
-          <p className="p-small">
+          <p className="p-small" data-aos="fade-right">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
 
-          <ul className="d-flex flex-column ">
+          <ul className="d-flex flex-column " data-aos="fade-left">
             <li  class="aos-init aos-animate">
               <a href="#f" className="d-flex" >
                 <div class="address-icon-wrapper">
@@ -116,7 +118,7 @@ const Contact = () => {
             </li>
           </ul>
           <MediaLink color="white" />
-          <div className="lets-connect">
+          <div className="lets-connect" data-aos="zoom-in">
             <div className="d-flex align-items-end">
               <button href="contact" className="black-btn" type="submit">
                 Hire me

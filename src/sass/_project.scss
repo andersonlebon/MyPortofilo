@@ -53,6 +53,12 @@ img {
       transform: scaleY(0.7);
     }
   }
+  .tools {
+    gap: 8px;
+    li {
+      margin: 0;
+    }
+  }
 }
 
 .proj-info {
@@ -206,7 +212,7 @@ img {
    background-color: #333;
   flex-direction: column;
   align-items: center;
-  width: 85% !important;
+  width: 95% !important;
   padding: 10px 0!important;
   border-radius: 10px;
 

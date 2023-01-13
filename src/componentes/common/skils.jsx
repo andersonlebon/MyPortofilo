@@ -28,7 +28,7 @@ const Skils = () => {
   return (
     <div className="skils d-flex flex-column justify-content ">
       <div className="lang ">
-        <h3>Languages</h3>
+        <h3 data-aos="fade-down">Languages</h3>
         <Carousel className="languages d-flex" itemsToShow={3}>
           {SkilsData.language.map((skill) => (
             <Skill Logo={skill.logo} label={skill.label} />
@@ -37,7 +37,7 @@ const Skils = () => {
       </div>
 
       <div className="libraries my-5">
-        <h3>Labraries && Frameworks</h3>
+        <h3 data-aos="fade-down">Labraries && Frameworks</h3>
         <Carousel className="languages d-flex" itemsToShow={3}>
           {SkilsData.language.map((skill) => (
             <Skill Logo={skill.logo} label={skill.label} />

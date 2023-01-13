@@ -7,7 +7,7 @@ import { FaAngellist } from "react-icons/fa";
 const MediaLink = (props) => {
   return (
     <nav className={props.color}>
-      <ul className="d-flex w-100 align-items-center justify-content-start">
+      <ul className="d-flex w-100 align-items-center justify-content-start" data-aos="fade-left">
 
         <li>
           <Link to="" className="navbar-item">
