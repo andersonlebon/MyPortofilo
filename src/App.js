@@ -11,7 +11,7 @@ class App extends Component {
   state = {};
   render() {
     return (
-      <main>
+      <main class="d-flex flex-column align-items-center">
         <Route path="/" component={Navigation} />
         <Switch>
           <Route path="/" exact component={Home} />

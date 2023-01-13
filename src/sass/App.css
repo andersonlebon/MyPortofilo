@@ -589,7 +589,6 @@
 
 .home-section {
   width: 100%;
-  height: 100% !important;
   background-color: #272727;
   position: relative;
 }
@@ -766,6 +765,111 @@
 
 .hire-me a:hover {
   text-decoration: none;
+}
+
+@media screen and (max-width: 1130px) {
+  body {
+    font-size: 14px;
+  }
+  .home-section .hello {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 50px;
+    letter-spacing: -0.08rem;
+    margin-bottom: 1.8rem;
+  }
+  .home-section .home-bg img {
+    width: 70%;
+  }
+  .years-exp .years-text {
+    margin-left: -141px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .home-section {
+    padding: 20px  0 100px 0px !important;
+    margin: 130px 0 100px 0;
+    height: 85vh;
+    border: 5px solid #f3c92f5b !important;
+    width: 90% !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .home-section .vertical-text {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    text-orientation: sideways-right;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    font-size: 14px;
+    margin: 0;
+  }
+  .home-section .hello {
+    font-size: 32px;
+    line-height: 50px;
+    padding-bottom: 50px;
+    letter-spacing: -0.08rem;
+    margin-top: 1rem;
+    margin-bottom: 1.8rem;
+  }
+  .home-section .home-bg {
+    width: 100%;
+    right: 0;
+    top: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-right: -100px;
+  }
+  .home-section .square {
+    border: none !important;
+  }
+  .home-section .home-text {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 20px;
+  }
+  .home-section .experience {
+    left: 30px;
+    bottom: -180px;
+    z-index: 10;
+  }
+  .home-section .years-exp .years-text {
+    margin-left: -54px;
+    margin-bottom: 80px;
+  }
+  .home-section .hire-me {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 80px;
+    bottom: 120px;
+    z-index: 10;
+  }
+  .years-exp .years-text {
+    margin-left: -141px;
+  }
 }
 
 .about-section, .services {
@@ -1469,10 +1573,6 @@ body {
   color: #ffff;
 }
 
-main {
-  height: 100vh;
-}
-
 ul {
   list-style: none;
   margin: 0;
@@ -1549,6 +1649,7 @@ ol li::before {
 
 section {
   padding: 0 50px;
+  height: 100vh;
   box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.36);
   -webkit-box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.36);
   -moz-box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.36);

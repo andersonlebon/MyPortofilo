@@ -3,7 +3,7 @@ import MediaLink from "./common/medalink";
 
 const Contact = () => {
   return (
-    <section className="contact d-flex align-items-start h-100">
+    <section className="contact d-flex align-items-start">
       <h3 className=" vertical-text">CONTACT ME</h3>
       <div className="contact-container w-100 d-flex justify-content-between">
         <form className="w-10 d-flex flex-column">
