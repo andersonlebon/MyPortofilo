@@ -598,7 +598,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
   .header .white {
     display: none;
   }
@@ -790,7 +790,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 1130px) {
+@media (max-width: 1130px) {
   body {
     font-size: 14px;
   }
@@ -809,7 +809,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   body {
     font-size: 14px;
   }
@@ -936,6 +936,12 @@
     100% {
       width: 95%;
     }
+  }
+}
+
+@media screen and (min-width: 1630px) {
+  .home-section .square {
+    width: 93% !important;
   }
 }
 

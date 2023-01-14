@@ -150,7 +150,7 @@
   }
 }
 
-@media screen and (max-width: 1130px) {
+@media  (max-width: 1130px) {
   body {
     font-size: 14px;
   }
@@ -175,7 +175,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media  (max-width: 600px) {
   body {
     font-size: 14px;
   }
@@ -272,5 +272,12 @@
     100% {
       width: 95%;
     }
+  }
+}
+
+
+@media screen and (min-width: 1630px) {
+  .home-section .square {
+    width: 93% !important;
   }
 }
