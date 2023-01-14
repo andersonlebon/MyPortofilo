@@ -31,23 +31,22 @@
       margin: 0 11px;
     }
   }
- 
+
   .logo {
     h2 {
       margin: 0;
       padding: 0;
     }
-      &:hover{
-        text-decoration: none;
-        h2{
-          color: $text-primary;
-          transition: all 0.8s ease-in-out;
-          span {
-            color: $text-white;
-          }
-
+    &:hover {
+      text-decoration: none;
+      h2 {
+        color: $text-primary;
+        transition: all 0.8s ease-in-out;
+        span {
+          color: $text-white;
         }
       }
+    }
   }
   .small-color ul li a {
     color: $text-small !important;
@@ -135,8 +134,6 @@
   }
 }
 
-
-
 @keyframes animMenu {
   0% {
     height: 20px;
@@ -164,7 +161,7 @@
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 25px 0px;
   right: 0;
   top: 0;
-    width: 400px;
+  width: 400px;
   .lang li {
     font-size: 13px;
     margin: 0 20px 0 0;
@@ -174,7 +171,6 @@
       color: $text-primary !important;
       @include transition(0.3s, ease-in-out);
     }
-
   }
   .small-color {
     margin: 0 0 0 10px !important;
@@ -222,23 +218,21 @@
   @include transition(0.8s, ease);
 }
 
+.white ul li a {
+  color: $text-white;
+  &:hover {
+    color: $text-primary !important;
+    @include transition(0.3s, ease-in-out);
+  }
+}
 
- .white ul li a {
-    color: $text-white;
-    &:hover {
-      color: $text-primary !important;
-      @include transition(0.3s, ease-in-out);
+@media screen and (max-width: 700px) {
+  .header {
+    .white {
+      display: none;
     }
   }
-
-
-  @media screen and (max-width: 700px) {
-    .header {
-      .white {
-       display: none;
-      }
-    }
-    .menu-side {
-      width: 90% 
-    }
+  .menu-side {
+    width: 90%;
   }
+}

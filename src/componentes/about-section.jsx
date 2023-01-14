@@ -2,6 +2,7 @@ import React from "react";
 import "react-sweet-progress/lib/style.css";
 import ProgressBar from "@ramonak/react-progress-bar";
 import Skils from "./common/skils";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -71,7 +72,9 @@ const About = () => {
         <div className="lets-connect" data-aos="zoom-out">
             <div className="d-flex align-items-end">
               <button href="contact" className="black-btn" type="submit">
+                <Link to="contacts">
                 Hire me
+                </Link>
               </button>
               <a href="contact" className="" type="submit">
                 Download CV

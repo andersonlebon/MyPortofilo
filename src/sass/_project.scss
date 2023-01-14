@@ -20,6 +20,12 @@
     padding-bottom: 40px;
   }
 
+      .black-btn {
+    width: auto !important;
+    span {
+      font-size: 20px;
+    }
+  }
   .proj-date {
     width: 55%;
     .project-img {
@@ -194,6 +200,11 @@
   }
 }
 
+.btns {
+  margin: 0 !important;
+  gap: 10px;
+}
+
 @media (max-width: 900px) {
   .projects {
     width: 100% !important;
@@ -220,8 +231,8 @@
       border-radius: 10px;
 
       .proj-info {
-      width: 90%;
-      }  
+        width: 90%;
+      }
     }
     .title {
       font-size: 30px;
@@ -256,6 +267,12 @@
         }
       }
     }
+    .black-btn {
+    width: auto !important;
+    span {
+      font-size: 20px;
+    }
+  }
   }
   .rec-arrow-right {
     right: -40px;
@@ -268,11 +285,11 @@
   .rec-pagination {
     bottom: 30px;
   }
-      .feature-work-title {
-      display: block;
-      margin: 0;
-      padding: 20px 0 0 20px;
-      // background-color: #fff;
-      width: 90%;
-    }
+  .feature-work-title {
+    display: block;
+    margin: 0;
+    padding: 20px 0 0 20px;
+    // background-color: #fff;
+    width: 90%;
+  }
 }

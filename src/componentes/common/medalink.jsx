@@ -12,24 +12,24 @@ const MediaLink = (props) => {
         data-aos="fade-left"
       >
         <li>
-          <Link to="" className="navbar-item">
+          <a href="https://github.com/andersonlebon" className="navbar-item">
             <AiFillGithub />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="" className="navbar-item">
+          <a href="https://www.linkedin.com/in/anderson-caleb-915343209/" className="navbar-item">
             <AiFillLinkedin />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="" className="navbar-item">
+          <a href="https://angel.co/u/anderson-caleb" className="navbar-item">
             <FaAngellist />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="" className="navbar-item">
+          <a href="https://www.facebook.com/caleb.buyana.9" className="navbar-item">
             <CgFacebook />
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>

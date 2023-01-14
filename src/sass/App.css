@@ -675,8 +675,8 @@
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   text-orientation: sideways-right;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(180deg) !important;
+          transform: rotate(180deg) !important;
   font-size: 14px;
   margin: 0 3rem;
 }
@@ -1075,7 +1075,7 @@
   gap: 5rem;
   width: 100%;
   background-image: url("../images/download.png");
-  background-position: cover;
+  background-position: left center;
 }
 
 .services .s-text {
@@ -1118,7 +1118,7 @@
 }
 
 .before-after::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -1130,7 +1130,7 @@
 }
 
 .before-after::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -1334,21 +1334,62 @@
 }
 
 .black-btn {
-  width: 170px;
+  width: 160px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
   letter-spacing: 0.025em;
   border: 0;
   border-radius: 0;
   padding: 0.7em 1.2em;
   background-color: black;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  gap: 10px;
   color: #fff;
   border: 2px solid #f3c92f5b !important;
 }
 
+.black-btn span {
+  color: #f3ca2f;
+  font-size: 30px;
+}
+
+.black-btn a {
+  font-size: inherit;
+  text-decoration: none !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.black-btn a:hover {
+  color: black !important;
+}
+
 .black-btn:hover {
   background-color: #f3ca2f;
-  color: black;
+  color: black !important;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  text-decoration: none;
+}
+
+.black-btn:hover span {
+  color: #fff;
 }
 
 .title {
@@ -1366,7 +1407,8 @@
   text-decoration: none;
 }
 
-.title:hover h2, .title:hover span {
+.title:hover h2,
+.title:hover span {
   color: #fff;
 }
 
@@ -1443,14 +1485,16 @@
   }
 }
 
-.contact .white ul, .home-section .white ul {
+.contact .white ul,
+.home-section .white ul {
   position: relative;
   z-index: 10;
   margin: 1rem 0;
   gap: 15px;
 }
 
-.contact .white ul li a, .home-section .white ul li a {
+.contact .white ul li a,
+.home-section .white ul li a {
   font-size: 40px;
   color: #9e9e9e;
 }
@@ -1552,6 +1596,14 @@
 .projects p {
   width: 100%;
   padding-bottom: 40px;
+}
+
+.projects .black-btn {
+  width: auto !important;
+}
+
+.projects .black-btn span {
+  font-size: 20px;
 }
 
 .projects .proj-date {
@@ -1766,6 +1818,11 @@
   cursor: pointer;
 }
 
+.btns {
+  margin: 0 !important;
+  gap: 10px;
+}
+
 @media (max-width: 900px) {
   .projects {
     width: 100% !important;
@@ -1843,6 +1900,12 @@
   }
   .projects .proj-date .project-img img {
     width: 90%;
+  }
+  .projects .black-btn {
+    width: auto !important;
+  }
+  .projects .black-btn span {
+    font-size: 20px;
   }
   .rec-arrow-right {
     right: -40px;
@@ -2017,7 +2080,7 @@ section {
 }
 
 ::-webkit-scrollbar {
-  width: .4rem;
+  width: 0.4rem;
 }
 
 ::-webkit-scrollbar-track {

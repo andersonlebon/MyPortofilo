@@ -12,7 +12,7 @@
 
   .about-exp {
     font-size: 12px;
-      gap: 20px;
+    gap: 20px;
 
     .skils {
       gap: 20px;
@@ -20,7 +20,7 @@
         margin-bottom: 20px;
       }
     }
-    
+
     .label {
       padding-right: 38px;
     }
@@ -54,27 +54,26 @@
 }
 
 .lets-connect {
-
   div {
     gap: 20px;
   }
-   a {
-      font-weight: 500;
-      font-size: 20px;
-      display: flex;
-      align-items: center;
-      margin: 0.7em 0;
-      color: $text-primary;
-      border-bottom: 1px solid $text-primary;
+  a {
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0.7em 0;
+    color: $text-primary;
+    border-bottom: 1px solid $text-primary;
 
-       svg{
-        font-size: 26px;
-        margin: 0 3px;
-       }
-       &:hover{
-        text-decoration: none;
-       }
+    svg {
+      font-size: 26px;
+      margin: 0 3px;
     }
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 @media (max-width: 900px) {
@@ -99,7 +98,6 @@
       width: 100% !important;
     }
     p {
-      
       width: 95% !important;
       text-align: center;
     }
@@ -115,10 +113,9 @@
       flex-direction: column;
 
       .skils .languages {
-  width: 100%;
-}
+        width: 100%;
+      }
     }
-
   }
   .black-btn {
     width: 120px !important;

@@ -1,4 +1,6 @@
 import React from "react";
+import { BsGithub } from "react-icons/bs";
+import {BiLinkExternal} from "react-icons/bi"
 
 const Project = (props) => {
   const { description, title, date, type, image, projImage } = props.project;
@@ -35,10 +37,13 @@ const Project = (props) => {
                  <li key={stack.id}>{stack}</li>
                 ))}
               </ul>
-            <div className="btns mt-5">
-              <button typp="button" className="black-btn">
-                See Project
-              </button>
+            <div className="btns mt-5 d-flex">
+              <a className="black-btn" href={props.project.githubLink}>
+                See Live <span><BsGithub/></span>
+              </a>
+              <a href={props.project.demoLink} className="black-btn">
+                Source code  <span><BiLinkExternal/></span>
+              </a>
             </div>
           </div>
           <div className="proj-date d-flex flex-column align-items-end">
