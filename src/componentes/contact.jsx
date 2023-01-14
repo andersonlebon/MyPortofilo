@@ -1,19 +1,54 @@
-import React from "react";
+import React, {useState, useRef} from "react";
 import MediaLink from "./common/medalink";
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
+  const [state, setState] = useState({
+    name: "",
+    email: "",
+    object: "",
+    message: "",
+    sent: false,
+  });
+  const form = useRef()
+   const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_7bl9y27', 'template_jtkezo6', form.current, 'uVTT8D2pMj78Gkc1k')
+      .then((result) => {
+        setTimeout(() => {
+          setState({
+            sent: false,
+          });
+      
+        }, 3000);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      form.current.reset()
+      setState({sent: true})
+
+  };
+
+  const handelChange = (e) => {
+    setState({
+      ...state,
+      [e.target.name]: e.target.value,
+    });
+  };
   return (
     <section  id="contacts" className="contact d-flex align-items-start">
       <h3 className=" vertical-text" data-aos="fade-down">CONTACT ME</h3>
       <div className="contact-container w-100 d-flex justify-content-between">
-        <form className="w-10 d-flex flex-column">
+        <form ref={form} onSubmit={sendEmail} className="w-10 d-flex flex-column">
           <h2 className="title" data-aos="fade-righ">GET IN TOUCH</h2>
           <p className="p-small" data-aos="fade-left">
             Question, comment or concern? this contact form is the best way to
             get in touch with me.
           </p>
           <div className="mail-name d-flex justify-content-between" data-aos="flip-left">
-            <input type="text" className="w-50" placeholder="Name*" />
+            <input type="text" className="w-50" name="name" placeholder="Name*" onChange={handelChange} />
             <input
               type="email"
               name="email"
@@ -21,16 +56,19 @@ const Contact = () => {
               id="email"
               placeholder="Email*"
               data-aos="fade-down"
+              onChange={handelChange} 
             />
           </div>
-          <input type="text" data-aos="fade-down" placeholder="Subject(Optional)" />
+          <input type="text" data-aos="fade-down" onChange={handelChange} name="subject" placeholder="Subject(Optional)" />
           <textarea
+            onChange={handelChange} 
             data-aos="zoom-in"
             name="message"
             cols="30"
             rows="10"
             placeholder="Message*"
           ></textarea>
+          { state.sent && <p className="email-sent"> Email sent successfully </p>}
           <button className="black-btn" type="submit " data-aos="fade-up">
             Post Comment
           </button>
@@ -123,7 +161,7 @@ const Contact = () => {
               <button href="contact" className="black-btn" type="submit">
                 Hire me
               </button>
-              <a href="contact" className="" type="submit">
+              <a href="https://drive.google.com/file/d/1auJRIuuwt9Uw8zLkOxcA54TelgVmndT1/view?usp=sharing" className="" type="submit">
                 Download CV
                 <svg stroke="#f3ca2f" fill="#f3ca2f" stroke-width="0" viewBox="0 0 24 24" class="download-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
               </a>
