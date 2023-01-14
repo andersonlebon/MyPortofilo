@@ -3,15 +3,7 @@ import { BsGithub } from "react-icons/bs";
 import {BiLinkExternal} from "react-icons/bi"
 
 const Project = (props) => {
-  const { description, title, date, type, image, projImage } = props.project;
-
-  let bgStyle = {
-    backgroundImage: `url(${image})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center center",
-    // backgroundSize: "cover",
-    backgroundSize: "130%",
-  };
+  const { description, title, date, type, projImage, githubLink, demoLink, techs, stacks } = props.project;
 
   return (
     <section
@@ -28,20 +20,20 @@ const Project = (props) => {
             </h2>
               <p data-aos="zoom-in"  className="p-small">{description}</p>
               <ul className="tools p-small d-flex" >
-               {props.project.techs.map((tool, id) => (
+               {techs.map((tool, id) => (
                  <li key={id}>{tool}</li>
                 ))}
               </ul>
               <ul className="project-stacks d-flex p-small">
-               {props.project.stacks.map((stack, id) => (
+               {stacks.map((stack, id) => (
                  <li key={id}>{stack}</li>
                 ))}
               </ul>
             <div className="btns mt-5 d-flex">
-              <a className="black-btn" href={props.project.githubLink}>
+              <a className="black-btn" href={ githubLink }>
                 See Live <span><BsGithub/></span>
               </a>
-              <a href={props.project.demoLink} className="black-btn">
+              <a href={ demoLink } className="black-btn">
                 Source code  <span><BiLinkExternal/></span>
               </a>
             </div>

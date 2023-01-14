@@ -1,5 +1,4 @@
 import React from "react";
-import caleb from "../images/gitprof3.png";
 import frontend from "../images/front-end.png";
 import backend from "../images/backend.png";
 import mobile from "../images/mobile.png";

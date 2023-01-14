@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
-@import url(/home/anderson/Documents/projectes/my-portfolio/node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
 .text-yellow {
   color: #f3ca2f;
 }
