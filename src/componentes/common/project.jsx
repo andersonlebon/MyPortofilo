@@ -31,10 +31,10 @@ const Project = (props) => {
               </ul>
             <div className="btns mt-5 d-flex">
               <a className="black-btn" href={ githubLink }>
-                See Live <span><BsGithub/></span>
+                Source code<span><BsGithub/></span>
               </a>
               <a href={ demoLink } className="black-btn">
-                Source code  <span><BiLinkExternal/></span>
+                See Live   <span><BiLinkExternal/></span>
               </a>
             </div>
           </div>
