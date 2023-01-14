@@ -1,0 +1,48 @@
+.skils {
+  // max-width: 60%;
+
+  h3 {
+    font-size: 1.1rem;
+  }
+  .lag-label {
+    font-size: 0.6rem;
+    color: $text-small;
+    line-height: 18px;
+  }
+
+  .language-item {
+    width: 90px;
+    background-color: #333;
+    margin: 0 7px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+  }
+
+  .lang-icon {
+    background-color: $text-primary;
+    width: 28px;
+    height: 28px;
+    margin: 2px;
+    border-radius: 48%;
+    font-size: 1rem;
+    box-shadow: 0 0 1px 2px white;
+  }
+
+  .rec-arrow {
+    display: none;
+  }
+  .rec-pagination {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -35px;
+  }
+
+  .rec-swipable {
+    justify-content: flex-start;
+  }
+
+  .languages {
+    width: 60%;
+  }
+}

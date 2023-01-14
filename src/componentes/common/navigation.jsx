@@ -19,13 +19,19 @@ class Navigation extends Component {
       showMenu = !showMenu;
       this.setState({ showMenu });
       AnimMenu = !AnimMenu;
-    }, 400);
+    }, 300);
   };
   render() {
     return (
-      <header className="header d-flex w-100 align-items-center">
+      <header
+        className="header d-flex w-100 justify-content-between align-items-center"
+        data-aos="fade-down"
+      >
         <Link to="home" className="logo w-25">
-          LOGO
+          <h2 className="title d-flex">
+            <span className="text-yellow">{"<"}/</span>Caleb
+            <span className="text-yellow">{">"}.</span>
+          </h2>
         </Link>
         <MediaLink color="white" />
         <Link
@@ -43,7 +49,10 @@ class Navigation extends Component {
           <div></div>
           <div></div>
         </Link>
-        <MenuSide showMenu={this.state.showMenu} />
+        <MenuSide
+          onShowMenu={this.handelShowMMenu}
+          showMenu={this.state.showMenu}
+        />
       </header>
     );
   }

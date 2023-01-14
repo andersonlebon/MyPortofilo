@@ -7,26 +7,29 @@ import { FaAngellist } from "react-icons/fa";
 const MediaLink = (props) => {
   return (
     <nav className={props.color}>
-      <ul className="d-flex w-100 align-items-center justify-content-start">
+      <ul
+        className="d-flex w-100 align-items-center justify-content-start"
+        data-aos="fade-left"
+      >
         <li>
-          <Link to="" className="navbar-item">
-            <CgFacebook />
-          </Link>
-        </li>
-        <li>
-          <Link to="" className="navbar-item">
+          <a href="https://github.com/andersonlebon" className="navbar-item">
             <AiFillGithub />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="" className="navbar-item">
+          <a href="https://www.linkedin.com/in/anderson-caleb-915343209/" className="navbar-item">
             <AiFillLinkedin />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="" className="navbar-item">
+          <a href="https://angel.co/u/anderson-caleb" className="navbar-item">
             <FaAngellist />
-          </Link>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/caleb.buyana.9" className="navbar-item">
+            <CgFacebook />
+          </a>
         </li>
       </ul>
     </nav>

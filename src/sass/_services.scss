@@ -1,44 +1,150 @@
 .services {
+  position: relative;
+  z-index: 5;
+  gap: 5rem;
+  width: 100%;
+  background-image: url("../images/download.png");
+  background-position: left center;
   @extend .about-section;
   .s-text {
     margin: 0 30px;
   }
+}
 
-  .experience {
-    position: relative;
-    width: 450px;
-    height: 580px;
-    z-index: 1;
-
-    .my-image {
-      width: 90%;
-      height: 80%;
-      z-index: 2;
+.services-tec {
+  color: $text-small;
+  //  animation: animstack 2s ease infinite;
+  gap: 4rem;
+  width: 50%;
+  .service-tec-wraper {
+    gap: 15px;
+    width: 25rem;
+    padding: 1rem;
+    background-color: #333;
+    height: 12rem;
+    img {
+      width: 150px;
     }
-
-    .dots {
-      width: 350px;
-      height: 250px;
-      background-image: url(../images/download.png);
-      position: absolute;
-      bottom: -110px;
-      left: -50px;
-      z-index: 100;
+    &:last-child {
+      border-radius: 50px 0 50px;
+    }
+    &:first-child {
+      border-radius: 0 50px 0px;
     }
   }
-  .years-exp {
+
+  .services-front {
+    gap: 4rem;
+  }
+}
+
+.before-after {
+  position: relative;
+  border-radius: 50px 0 0 0 !important;
+  &::after {
+    content: "";
     position: absolute;
-    bottom: 0px;
-    .number {
-      // font-size: 150px;
-      padding: 0;
-      line-height: 1;
-      font-size: 10.71rem;
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 100%;
+    background-color: #333;
+    transform: rotate(115deg) translate(84px, -60px);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 100%;
+    background-color: #333;
+    transform: rotate(-115deg) translate(84px, 60px);
+  }
+}
+
+@keyframes animstack {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.01);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+  75% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// media query for screen less that 900
+@media (max-width: 900px) {
+  .services {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 100px 10px;
+    gap: 2rem;
+    .s-text {
+      margin: 0;
     }
-    .years-text {
-      padding-bottom: 28px;
-      font-size: 1.571rem;
-      line-height: 1.181;
+
+    h3 {
+      display: none;
+    }
+    .service-text {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      div {
+        width: 90%;
+      }
+    }
+    p {
+      width: 80%;
+      br {
+        display: none;
+      }
+    }
+    ol {
+      margin: 0 0 0 20px;
+    }
+
+    .before-after {
+      &::after {
+        transform: rotate(115deg) translate(140px, 108px);
+      }
+      &::before {
+        transform: rotate(-115deg) translate(-303px, 40px);
+        left: 0;
+      }
+    }
+  }
+  .services-tec {
+    width: 90%;
+    flex-direction: column;
+    gap: 25px;
+
+    .service-tec-wraper {
+      width: 100%;
+      height: 9rem;
+      text-align: center;
+      img {
+        width: 100px;
+      }
+      h4 {
+        font-size: 17px;
+      }
+    }
+    .services-front {
+      width: 100%;
+      gap: 25px;
     }
   }
 }

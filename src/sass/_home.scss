@@ -1,14 +1,16 @@
 .home-section {
   width: 100%;
-  height: 100vh !important;
   background-color: $background-color;
+  position: relative;
+  height: 100vh !important;
 
   .hello {
     position: relative;
     font-size: 40px;
-    line-height: 53px;
-    padding-bottom: 100px;
+    line-height: 55px;
+    padding-bottom: 80px;
     letter-spacing: -0.08rem;
+    margin-bottom: 1.8rem;
 
     &::after {
       content: "";
@@ -21,12 +23,253 @@
       background: $text-primary;
     }
   }
+
+  .home-bg {
+    width: 50%;
+    position: absolute;
+    top: 80px;
+    right: 10%;
+    z-index: 1;
+
+    img {
+      width: 60%;
+      height: 100%;
+      animation: mainPhoto 80s ease infinite;
+    }
+  }
+  .home-text {
+    width: 50%;
+  }
+
+  .square {
+    position: absolute;
+    width: 90%;
+
+    height: 70%;
+    top: 150px;
+    right: 100px;
+    border: 5px solid #f3c92f5b !important;
+
+    button {
+      border: 1px solid #f3c92f5b !important;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .vertical-text {
   writing-mode: vertical-lr;
   text-orientation: sideways-right;
-  transform: rotate(180deg);
+  transform: rotate(180deg) !important;
   font-size: 14px;
-  margin-right: 80px;
+  margin: 0 3rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+}
+
+@keyframes mainPhoto {
+  0% {
+    width: 60%;
+  }
+  25% {
+    width: 70%;
+  }
+
+  50% {
+    width: 80%;
+  }
+  75% {
+    width: 70%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+.experience {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+
+  .dots {
+    width: 350px;
+    height: 250px;
+    background-image: url(../images/download.png);
+    position: absolute;
+    bottom: -110px;
+    left: -50px;
+    z-index: 100;
+  }
+}
+.years-exp {
+  bottom: 0px;
+  .number {
+    // font-size: 150px;
+    padding: 0;
+    line-height: 1;
+    font-size: 18.71rem;
+  }
+  .years-text {
+    padding-bottom: 21px;
+    font-size: 1.571rem;
+    line-height: 1.181;
+    margin-left: -58px;
+  }
+}
+
+.hire-me {
+  position: absolute;
+  bottom: 80px;
+  left: 100px;
+  height: 100%;
+  gap: 15px;
+
+  a {
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0.7em 0;
+    color: $text-primary;
+    border-bottom: 1px solid $text-primary;
+
+    svg {
+      font-size: 26px;
+      margin: 0 3px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  body {
+    font-size: 14px;
+  }
+  .home-section {
+    .hello {
+      font-size: 30px;
+      line-height: 40px;
+      padding-bottom: 50px;
+      letter-spacing: -0.08rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .home-bg {
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  .years-exp .years-text {
+    margin-left: -141px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .home-section {
+    padding: 20px 0 100px 0px !important;
+    margin: 130px 0 100px 0;
+    height: 85vh;
+    border: 5px solid #f3c92f5b !important;
+    width: 90% !important;
+    justify-content: flex-start !important;
+    .vertical-text {
+      writing-mode: horizontal-tb;
+      text-orientation: sideways-right;
+      transform: rotate(0);
+      font-size: 14px;
+      margin: 0;
+    }
+    .hello {
+      font-size: 32px;
+      line-height: 50px;
+      padding-bottom: 50px;
+      letter-spacing: -0.08rem;
+      margin-top: 1rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .home-bg {
+      width: 100%;
+      right: 0;
+      top: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-right: -100px;
+      img {
+        width: 95%;
+        animation: mainPhoto 10s ease infinite;
+      }
+    }
+    .square {
+      border: none !important;
+      z-index: 5;
+    }
+    .home-text {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+      padding-left: 20px;
+    }
+
+    .experience {
+      left: 30px;
+      bottom: -180px;
+      z-index: 10;
+    }
+
+    .years-exp {
+      .years-text {
+        margin-left: -54px;
+        margin-bottom: 80px;
+      }
+    }
+    .hire-me {
+      justify-content: flex-end;
+      left: 80px;
+      bottom: 120px;
+      z-index: 10;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+  }
+
+  .years-exp .years-text {
+    margin-left: -141px;
+  }
+
+  @keyframes mainPhoto {
+    0% {
+      width: 95%;
+    }
+    25% {
+      width: 100%;
+    }
+
+    50% {
+      width: 105%;
+    }
+    75% {
+      width: 100%;
+    }
+    100% {
+      width: 95%;
+    }
+  }
 }
