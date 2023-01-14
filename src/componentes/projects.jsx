@@ -135,7 +135,7 @@ is in a paid parking area and later auto-stops when leaving. Creating a simple c
   ];
   return (
     <>
-    <h4 class="smal-title feature-work-title" data-aos="fade-right">Feature Works</h4>
+    <h4 className="smal-title feature-work-title" data-aos="fade-right">Feature Works</h4>
     <Carousel id="projects">
       {projects.map((item) => (
         <Project key={item.id} project={item} />
