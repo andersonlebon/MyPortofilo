@@ -1,4 +1,3 @@
-import Carousel from "react-elastic-carousel";
 import React, { Component } from "react";
 import About from "./about-section";
 import Contact from "./contact";

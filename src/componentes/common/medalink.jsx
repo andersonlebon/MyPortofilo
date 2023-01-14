@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { CgFacebook } from "react-icons/cg";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaAngellist } from "react-icons/fa";
