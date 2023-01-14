@@ -828,8 +828,8 @@
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
     text-orientation: sideways-right;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    -webkit-transform: rotate(0) !important;
+            transform: rotate(0) !important;
     font-size: 14px;
     margin: 0;
   }
@@ -889,7 +889,7 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
     left: 80px;
-    bottom: 120px;
+    bottom: 100px;
     z-index: 10;
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -898,6 +898,7 @@
     -webkit-box-align: start !important;
         -ms-flex-align: start !important;
             align-items: flex-start !important;
+    gap: 0 !important;
   }
   .years-exp .years-text {
     margin-left: -141px;
@@ -1519,6 +1520,10 @@
 }
 
 @media (max-width: 900px) {
+  footer {
+    padding: 10px !important;
+    font-size: 10px !important;
+  }
   .contact {
     width: 100%;
     height: 100%;
@@ -1533,8 +1538,8 @@
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(0deg) !important;
+            transform: rotate(0deg) !important;
     margin: 20px;
   }
   .contact .contact-container {
@@ -2074,6 +2079,10 @@ section {
   box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.36);
   -webkit-box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.36);
   -moz-box-shadow: -71px 100px 221px 85px rgba(60, 59, 59, 0.36);
+}
+
+main {
+  overflow-x: hidden;
 }
 
 @supports (scrollbar-color: #272727 #f3ca2f) {

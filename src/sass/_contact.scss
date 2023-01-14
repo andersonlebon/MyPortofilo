@@ -183,6 +183,10 @@
 }
 
 @media (max-width: 900px) {
+  footer {
+    padding: 10px !important;
+    font-size: 10px !important;
+  }
   .contact {
     width: 100%;
     height: 100%;
@@ -191,7 +195,7 @@
     flex-direction: column !important;
     .vertical-text {
       writing-mode: horizontal-tb;
-      transform: rotate(0deg);
+      transform: rotate(0deg) !important;
       margin: 20px;
     }
 

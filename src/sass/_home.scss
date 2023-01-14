@@ -190,7 +190,7 @@
     .vertical-text {
       writing-mode: horizontal-tb;
       text-orientation: sideways-right;
-      transform: rotate(0);
+      transform: rotate(0) !important;
       font-size: 14px;
       margin: 0;
     }
@@ -243,10 +243,11 @@
     .hire-me {
       justify-content: flex-end;
       left: 80px;
-      bottom: 120px;
+      bottom: 100px;
       z-index: 10;
       flex-direction: column !important;
       align-items: flex-start !important;
+      gap: 0 !important;
     }
   }
 
