@@ -1,6 +1,8 @@
 <div align="center">
   <img src="https://user-images.githubusercontent.com/65068771/212500585-fbf0036f-c2f3-4789-a194-5a6fe6533b79.png" />
   <br/>
+  
+https://youtu.be/c9hm4bTBDII  
 
   <h3><b>My Portfolio</b></h3>
 
@@ -106,19 +108,11 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Anderson Caleb**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Andersonlebon](https://github.com/andersonlebon)
+- Twitter: [@BuyananaCaleb](https://twitter.com/BuyananaCaleb)
+- LinkedIn: [Anderson Caleb](https://www.linkedin.com/in/anderson-caleb-915343209/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
