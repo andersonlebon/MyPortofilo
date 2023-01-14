@@ -28,13 +28,13 @@ const Project = (props) => {
             </h2>
               <p data-aos="zoom-in"  className="p-small">{description}</p>
               <ul className="tools p-small d-flex" >
-               {props.project.techs.map((tool, i) => (
-                 <li key={tool.id}>{tool}</li>
+               {props.project.techs.map((tool, id) => (
+                 <li key={id}>{tool}</li>
                 ))}
               </ul>
               <ul className="project-stacks d-flex p-small">
-               {props.project.stacks.map((stack, i) => (
-                 <li key={stack.id}>{stack}</li>
+               {props.project.stacks.map((stack, id) => (
+                 <li key={id}>{stack}</li>
                 ))}
               </ul>
             <div className="btns mt-5 d-flex">

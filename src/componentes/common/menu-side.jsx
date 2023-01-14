@@ -87,15 +87,15 @@ const MenuSide = (props) => {
       <MediaLink color="small-color" />
       <div className="side-info">
         <ul className="d-flex flex-column ">
-          <li class="aos-init aos-animate">
+          <li className="aos-init aos-animate">
             <a href="#f" className="d-flex">
-              <div class="address-icon-wrapper">
+              <div className="address-icon-wrapper">
                 <svg
                   stroke="#f3ca2f"
                   fill="#f3ca2f"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 384 512"
-                  class="contact-address-icon"
+                  className="contact-address-icon"
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -106,28 +106,28 @@ const MenuSide = (props) => {
               Rwanda - Kigali - Kk Av8 109St
             </a>
           </li>
-          <li class="aos-init aos-animate">
+          <li className="aos-init aos-animate">
             <a href="#f" className="d-flex">
-              <div class="address-icon-wrapper">
+              <div className="address-icon-wrapper">
                 <svg
                   stroke="#f3ca2f"
                   fill="#f3ca2f"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 16 16"
-                  class="contact-address-icon"
+                  className="contact-address-icon"
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M.071 4.243a.5.5 0 01.686-.172L8 8.417l7.243-4.346a.5.5 0 01.514.858L8 9.583.243 4.93a.5.5 0 01-.172-.686z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                   <path d="M6.752 8.932l.432-.252-.504-.864-.432.252.504.864zm-6 3.5l6-3.5-.504-.864-6 3.5.504.864zm8.496-3.5l-.432-.252.504-.864.432.252-.504.864zm6 3.5l-6-3.5.504-.864 6 3.5-.504.864z"></path>
                 </svg>
@@ -135,17 +135,17 @@ const MenuSide = (props) => {
               buyananderson@gmail.com
             </a>
           </li>
-          <li class="aos-init aos-animate">
+          <li className="aos-init aos-animate">
             <a href="#f" className="d-flex">
-              <div class="address-icon-wrapper">
+              <div className="address-icon-wrapper">
                 <svg
                   stroke="#f3ca2f"
                   fill="none"
-                  stroke-width="2"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="contact-address-icon"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="contact-address-icon"
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"

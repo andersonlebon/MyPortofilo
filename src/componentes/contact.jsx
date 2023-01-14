@@ -1,6 +1,7 @@
 import React, {useState, useRef} from "react";
 import MediaLink from "./common/medalink";
 import emailjs from 'emailjs-com'
+import { FcCheckmark } from "react-icons/fc";
 
 const Contact = () => {
   const [state, setState] = useState({
@@ -68,7 +69,7 @@ const Contact = () => {
             rows="10"
             placeholder="Message*"
           ></textarea>
-          { state.sent && <p className="email-sent"> Email sent successfully </p>}
+          { state.sent && <p className="email-sent"> Email sent successfully <span><FcCheckmark/></span></p>}
           <button className="black-btn" type="submit " data-aos="fade-up">
             Post Comment
           </button>
@@ -85,15 +86,15 @@ const Contact = () => {
           </p>
 
           <ul className="d-flex flex-column " data-aos="fade-left">
-            <li  class="aos-init aos-animate">
+            <li  className="aos-init aos-animate">
               <a href="#f" className="d-flex" >
-                <div class="address-icon-wrapper">
+                <div className="address-icon-wrapper">
                   <svg
                     stroke="#f3ca2f"
                     fill="#f3ca2f"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 384 512"
-                    class="contact-address-icon"
+                    className="contact-address-icon"
                     height="1em"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -104,28 +105,28 @@ const Contact = () => {
                 Rwanda - Kigali - Kk Av8 109St
               </a>
             </li>
-            <li  class="aos-init aos-animate">
+            <li  className="aos-init aos-animate">
               <a href="#f" className="d-flex">
-                <div class="address-icon-wrapper">
+                <div className="address-icon-wrapper">
                   <svg
                     stroke="#f3ca2f"
                     fill="#f3ca2f"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 16 16"
-                    class="contact-address-icon"
+                    className="contact-address-icon"
                     height="1em"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M.071 4.243a.5.5 0 01.686-.172L8 8.417l7.243-4.346a.5.5 0 01.514.858L8 9.583.243 4.93a.5.5 0 01-.172-.686z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                     <path d="M6.752 8.932l.432-.252-.504-.864-.432.252.504.864zm-6 3.5l6-3.5-.504-.864-6 3.5.504.864zm8.496-3.5l-.432-.252.504-.864.432.252-.504.864zm6 3.5l-6-3.5.504-.864 6 3.5-.504.864z"></path>
                   </svg>
@@ -133,17 +134,17 @@ const Contact = () => {
                 buyananderson@gmail.com
               </a>
             </li>
-            <li  class="aos-init aos-animate">
+            <li  className="aos-init aos-animate">
               <a href="#f" className="d-flex">
-                <div class="address-icon-wrapper">
+                <div className="address-icon-wrapper">
                   <svg
                     stroke="#f3ca2f"
                     fill="none"
-                    stroke-width="2"
+                    strokeWidth="2"
                     viewBox="0 0 24 24"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="contact-address-icon"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="contact-address-icon"
                     height="1em"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +164,7 @@ const Contact = () => {
               </button>
               <a href="https://drive.google.com/file/d/1auJRIuuwt9Uw8zLkOxcA54TelgVmndT1/view?usp=sharing" className="" type="submit">
                 Download CV
-                <svg stroke="#f3ca2f" fill="#f3ca2f" stroke-width="0" viewBox="0 0 24 24" class="download-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                <svg stroke="#f3ca2f" fill="#f3ca2f" strokeWidth="0" viewBox="0 0 24 24" className="download-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
               </a>
             </div>
         </div>

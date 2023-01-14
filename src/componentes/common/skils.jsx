@@ -56,8 +56,8 @@ const Skils = () => {
       <div className="lang ">
         <h3 data-aos="fade-down">Languages</h3>
         <Carousel className="languages d-flex" itemsToShow={3}>
-          {SkilsData.language.map((skill) => (
-            <Skill Logo={skill.logo} label={skill.label} />
+          {SkilsData.language.map((skill, id) => (
+            <Skill key={id} Logo={skill.logo} label={skill.label} />
           ))}
         </Carousel>
       </div>
@@ -65,8 +65,8 @@ const Skils = () => {
       <div className="libraries my-5">
         <h3 data-aos="fade-down">Labraries && Frameworks && Tools</h3>
         <Carousel className="languages d-flex" itemsToShow={3}>
-          {SkilsData.labrariesFrameworks.map((skill) => (
-            <Skill Logo={skill.logo} label={skill.label} />
+          {SkilsData.labrariesFrameworks.map((skill, id) => (
+            <Skill key={id} Logo={skill.logo} label={skill.label} />
           ))}
         </Carousel>
       </div>
