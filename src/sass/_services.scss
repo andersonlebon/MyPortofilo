@@ -3,6 +3,8 @@
     z-index: 5;
     gap: 5rem;
     width: 100%;
+    background-image: url('../images/download.png');
+background-position: cover;
   @extend .about-section;
   .s-text {
     margin: 0 30px;

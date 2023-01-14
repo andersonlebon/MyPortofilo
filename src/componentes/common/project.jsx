@@ -26,17 +26,14 @@ const Project = (props) => {
             </h2>
               <p data-aos="zoom-in"  className="p-small">{description}</p>
               <ul className="tools p-small d-flex" >
-                <li>Ruby</li>
-                <li>JavaSript</li>
-                <li>Reactjs</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SASS</li>
+               {props.project.techs.map((tool, i) => (
+                 <li key={tool.id}>{tool}</li>
+                ))}
               </ul>
               <ul className="project-stacks d-flex p-small">
-                <li>Frontend</li>
-                <li>Fullstack</li>
-                <li>Frontennd</li>
+               {props.project.stacks.map((stack, i) => (
+                 <li key={stack.id}>{stack}</li>
+                ))}
               </ul>
             <div className="btns mt-5">
               <button typp="button" className="black-btn">

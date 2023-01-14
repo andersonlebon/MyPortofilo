@@ -23,11 +23,15 @@ class Navigation extends Component {
   };
   render() {
     return (
-      <header className="header d-flex w-100 justify-content-between align-items-center" data-aos="fade-down"> 
+      <header
+        className="header d-flex w-100 justify-content-between align-items-center"
+        data-aos="fade-down"
+      >
         <Link to="home" className="logo w-25">
           <h2 className="title d-flex">
-            <span className="text-yellow">{"<"}/</span>Caleb<span className="text-yellow">{">"}.</span>
-            </h2>
+            <span className="text-yellow">{"<"}/</span>Caleb
+            <span className="text-yellow">{">"}.</span>
+          </h2>
         </Link>
         <MediaLink color="white" />
         <Link
@@ -45,7 +49,10 @@ class Navigation extends Component {
           <div></div>
           <div></div>
         </Link>
-        <MenuSide onShowMenu={this.handelShowMMenu} showMenu={this.state.showMenu} />
+        <MenuSide
+          onShowMenu={this.handelShowMMenu}
+          showMenu={this.state.showMenu}
+        />
       </header>
     );
   }

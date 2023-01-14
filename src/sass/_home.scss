@@ -4,7 +4,6 @@
   position: relative;
   height: 100vh !important;
 
-
   .hello {
     position: relative;
     font-size: 40px;
@@ -35,7 +34,7 @@
     img {
       width: 60%;
       height: 100%;
-       animation: mainPhoto 80s ease infinite;
+      animation: mainPhoto 80s ease infinite;
     }
   }
   .home-text {
@@ -214,12 +213,12 @@
       margin-right: -100px;
       img {
         width: 95%;
-       animation: mainPhoto 10s ease infinite;
-
+        animation: mainPhoto 10s ease infinite;
       }
     }
     .square {
       border: none !important;
+      z-index: 5;
     }
     .home-text {
       width: 100%;
@@ -247,7 +246,7 @@
       bottom: 120px;
       z-index: 10;
       flex-direction: column !important;
-align-items: flex-start !important;
+      align-items: flex-start !important;
     }
   }
 
@@ -256,21 +255,21 @@ align-items: flex-start !important;
   }
 
   @keyframes mainPhoto {
-  0% {
-    width: 95%;
-  }
-  25% {
-    width: 100%;
-  }
+    0% {
+      width: 95%;
+    }
+    25% {
+      width: 100%;
+    }
 
-  50% {
-    width: 105%;
+    50% {
+      width: 105%;
+    }
+    75% {
+      width: 100%;
+    }
+    100% {
+      width: 95%;
+    }
   }
-  75% {
-    width: 100%;
-  }
-  100% {
-    width: 95%;
-  }
-}
 }

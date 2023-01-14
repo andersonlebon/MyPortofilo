@@ -863,6 +863,7 @@
   }
   .home-section .square {
     border: none !important;
+    z-index: 5;
   }
   .home-section .home-text {
     width: 100%;
@@ -1073,6 +1074,8 @@
   z-index: 5;
   gap: 5rem;
   width: 100%;
+  background-image: url("../images/download.png");
+  background-position: cover;
 }
 
 .services .s-text {
@@ -1607,6 +1610,11 @@
   margin: 0;
 }
 
+.proj-info ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .rec-slider-container {
   margin: 0 !important;
 }
@@ -1656,6 +1664,10 @@
 
 .rec-arrow-right {
   right: 0;
+}
+
+.feature-work-title {
+  display: none;
 }
 
 @-webkit-keyframes bgAnim {
@@ -1721,7 +1733,7 @@
 
 .tools li {
   background-color: #3c3b3bba;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: 0.2rem 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1738,7 +1750,7 @@
 .project-stacks {
   margin: 10px 0 10px 15px;
   padding: 0;
-  gap: 30px;
+  gap: 5px 30px;
   font-size: 1rem;
   list-style-type: disc;
 }
@@ -1799,7 +1811,8 @@
     font-size: 30px;
     margin: 10px 0;
   }
-  .projects .tools, .projects .project-stacks {
+  .projects .tools,
+  .projects .project-stacks {
     margin-top: 10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1808,7 +1821,8 @@
             flex: 1;
     width: 100%;
   }
-  .projects .tools li, .projects .project-stacks li {
+  .projects .tools li,
+  .projects .project-stacks li {
     margin-bottom: 0;
   }
   .projects .btns {
@@ -1838,6 +1852,12 @@
   }
   .rec-pagination {
     bottom: 30px;
+  }
+  .feature-work-title {
+    display: block;
+    margin: 0;
+    padding: 20px 0 0 20px;
+    width: 90%;
   }
 }
 
