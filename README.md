@@ -52,8 +52,6 @@ https://user-images.githubusercontent.com/65068771/212502429-598781df-5049-4e5f-
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **Display my stacks**
 - **The website is animated**
 
