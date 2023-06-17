@@ -61,7 +61,7 @@ https://user-images.githubusercontent.com/65068771/212502429-598781df-5049-4e5f-
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://caleband.netlify.app)
+- [Live Demo Link](https://caleband.me)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
