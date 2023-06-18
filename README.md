@@ -141,6 +141,3 @@ If you like this project kindly leave a start
 I would like to thank everyone who will get time to have a look in the code.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
