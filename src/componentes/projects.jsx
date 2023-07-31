@@ -14,17 +14,15 @@ const Projects = () => {
   const projects = [
      {
       id: 0,
-      title: "ICinema",
-      description: `The iCinema is a single webapp that is based on the TVmaze API. With the use 
-       the Involvement API to POST and GET the likes and comments,
-        users can comment and like a certain series.`,
+      title: "LMS",
+      description: `Inquiry for developing a mobile app LMS for test practice, offering personalized and adaptive learning to identify weak areas and aid users in achieving desired results efficiently. Subjects include driving, scuba diving, health, hygiene, and first aid.`,
       projImage: "https://github.com/Enning94/OOP-School-Library/assets/65068771/b0ea6715-2b87-48c7-96a5-0b443433cf74",
-      githubLink: "https://github.com/SamanAtashi/JS-Capstone-project/",
-      demoLink: "https://samanatashi.github.io/JS-Capstone-project/dist/",
-      date: "Jun 2021",
-      type: "WebSite",
-      techs: ["JavaScript", "HTML", "CSS",],
-      stacks : ["API", "Fullstack", "Frontennd"],
+      githubLink: "https://github.com/Hombre2014/lms",
+      demoLink: "https://lms-dashboard-weld.vercel.app/",
+      date: "April 2023",
+      type: "Mobile App, Dashboard",
+      techs: ["Nextjs", "Redux", "Tailwinds",],
+      stacks : ["API", "Fullstack", "Frontennd", "Mobile App"],
     },
     {
       id: 1,
