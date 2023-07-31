@@ -12,6 +12,20 @@ import project8 from "../images/project8.png";
 
 const Projects = () => {
   const projects = [
+     {
+      id: 0,
+      title: "ICinema",
+      description: `The iCinema is a single webapp that is based on the TVmaze API. With the use 
+       the Involvement API to POST and GET the likes and comments,
+        users can comment and like a certain series.`,
+      projImage: "https://github.com/Enning94/OOP-School-Library/assets/65068771/b0ea6715-2b87-48c7-96a5-0b443433cf74",
+      githubLink: "https://github.com/SamanAtashi/JS-Capstone-project/",
+      demoLink: "https://samanatashi.github.io/JS-Capstone-project/dist/",
+      date: "Jun 2021",
+      type: "WebSite",
+      techs: ["JavaScript", "HTML", "CSS",],
+      stacks : ["API", "Fullstack", "Frontennd"],
+    },
     {
       id: 1,
       title: "ICinema",
