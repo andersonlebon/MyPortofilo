@@ -21,7 +21,7 @@ const Projects = () => {
       demoLink: "https://lms-dashboard-weld.vercel.app/",
       date: "April 2023",
       type: "Mobile App, Dashboard",
-      techs: ["Nextjs", "Redux", "Tailwinds",],
+      techs: ["React Native","Nextjs", "Redux", "Tailwinds",],
       stacks : ["API", "Fullstack", "Frontennd", "Mobile App"],
     },
     {
