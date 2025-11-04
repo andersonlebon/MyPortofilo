@@ -34,7 +34,7 @@ const HomeSection = () => {
             <div className="experience text-small">
               <div className="dots"></div>
               <div className="years-exp text-bold text-white align-items-end d-flex justify-center w-100">
-                <div className="number text-yellow" data-aos="fade-right">3</div>
+                <div className="number text-yellow" data-aos="fade-right">+5</div>
                 <div className="years-text" data-aos="fade-left">
                   YEARS <br /> EXPERIENCE
                 </div>
