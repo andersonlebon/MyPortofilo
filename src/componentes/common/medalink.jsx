@@ -20,7 +20,7 @@ const MediaLink = (props) => {
             <AiFillLinkedin />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://angel.co/u/anderson-caleb" className="navbar-item">
             <FaAngellist />
           </a>
@@ -29,7 +29,7 @@ const MediaLink = (props) => {
           <a href="https://www.facebook.com/caleb.buyana.9" className="navbar-item">
             <CgFacebook />
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
