@@ -1,7 +1,7 @@
 import React from "react";
-import { CgFacebook } from "react-icons/cg";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { FaAngellist } from "react-icons/fa";
+// import { CgFacebook } from "react-icons/cg";
+// import { FaAngellist } from "react-icons/fa";
 
 const MediaLink = (props) => {
   return (
